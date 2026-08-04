@@ -61,8 +61,10 @@
             <button class="hamburger" type="button" aria-label="メニューを開く">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
+                <p class="hamburger-text">MENU</p>
                 <p class="hamburger-text">Close</p>
             </button>
         </div>
+        <div class="nav-overlay"></div>
     </header>
     <main>

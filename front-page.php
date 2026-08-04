@@ -6,20 +6,22 @@
         <div class="introduction">
                 
                 <div class="title">
+                        <img src="<?php echo get_theme_file_uri('img/clinic-img.webp'); ?>" alt="logo">
                         <div class="title-list">
                                 <ul class="title-list-container">
                                         <li class="title-list-1">内視鏡検査</li>
-                                        <li class="title-list-2">内科</li>
-                                        <li class="title-list-1">胃腸科</li>
-                                        <li class="title-list-2">外科</li>
-                                        <li class="title-list-1">形成外科</li>
-                                        <li class="title-list-2">皮膚科</li>
-                                        <li class="title-list-1">睡眠時無呼吸症候群</li>
+                                        <li class="title-list-2">睡眠時無呼吸症候群</li>
+                                        <li class="title-list-1">内科</li>
+                                        <li class="title-list-2">胃腸科</li>
+                                        <li class="title-list-1">外科</li>
+                                        <li class="title-list-2">形成外科</li>
+                                        <li class="title-list-1">皮膚科</li>
                                 </ul>
+                                <h1 class="title-text">地域に寄り添い、<span class="title-text-1">80</span>年。</h1>
+                                <p class="title-text-top">これからもあなたの“かかりつけ医“として</p>
+                                <p class="title-text-top">一人ひとりに寄り添いながら、安心して通えるクリニックを目指します。</p>
+                                <p class="title-text-bottom">※ 1946年から2026年現在まで</p>
                         </div>
-                        <h1 class="title-text">地域に寄り添い、80年。</h1>
-                        <p class="title-text-top">これからもあなたの“かかりつけ医“として<br>一人ひとりに寄り添いながら、安心して通えるクリニックを目指します。</p>
-                        <p class="title-text-bottom">※ 1946年から2026年現在まで</p>
                 </div>
                 <div class="point">
                         <div class="point01">
