@@ -43,7 +43,7 @@
             </div>
             <div class="header__inner2">
                 <div class="header_logo">
-                    <a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-1.webp" alt="大圃クリニック"></a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-1.webp" alt="大圃クリニック"></a>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
@@ -56,6 +56,16 @@
                         <li class="header__nav-item"><a href="#">当院の内視鏡検査について</a></li>
                         <li class="header__nav-item2"><a href="#">診療予約</a></li>
                     </ul>
+                    <div class="nav-address">
+                        <div class="nav-address-telephone">
+                            <p><i class="fa-solid fa-phone"></i> 0296-21-0123</p>
+                        </div>
+                        <div class="nav-address-text">
+                            <p><span class="nav-address-label">午前</span> 9:00-12:30</p>
+                            <p><span class="nav-address-label">午後</span> 14:30〜18:00</p>
+                            <p><span class="nav-address-label">休診日</span> 木、土曜午後、日、祝</p>
+                        </div>
+                    </div>
                 </nav>
             </div>
             <button class="hamburger" type="button" aria-label="メニューを開く">
