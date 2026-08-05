@@ -18,30 +18,34 @@
                                         <li class="title-list-1">皮膚科</li>
                                 </ul>
                                 <h1 class="title-text">地域に寄り添い、<span class="title-text-1">80</span>年。</h1>
-                                <p class="title-text-top">これからもあなたの“かかりつけ医“として</p>
-                                <p class="title-text-top">一人ひとりに寄り添いながら、安心して通えるクリニックを目指します。</p>
+                                <p class="title-text-top">これからもあなたの“かかりつけ医“として<br class="sp-hide-br">一人ひとりに寄り添いながら、安心して通えるクリニックを目指します。</p>
                                 <p class="title-text-bottom">※ 1946年から2026年現在まで</p>
                         </div>
                 </div>
                 <div class="point">
                         <div class="point01">
-                                <p class="point-text">POINT 01</p>
-                                <div class="point01-text">
-                                        <h2>皆様のかかりつけ医として<br>各診療科目に認定医が在中</h2>
-                                        <p>※日本消化器外科学会 認定医,日本外科学会 認定医,日本医師会 認定産業医,日本医師会 認定健康スポーツ医 大圃 弘<br>※日本外科学会 外科認定医,日本外科学会 認定登録医,日本医師会 認定産業医 大関 美穂<br>※日本内科学会 認定内科医 大圃 研,根岸 良充,伊藤 洋平</p>
+                                <div class="point-text-row">
+                                        <p class="point-text">POINT<span class="point-number">01</span></p>
+                                </div><div class="point01-text">
+                                        <h2 class="point-text-1">皆様のかかりつけ医として<br><span class="point-text-1-1">各診療科目に認定医が在中</span></h2>
+                                        <p class="point-text-2">※日本消化器外科学会 認定医,日本外科学会 認定医,日本医師会 認定産業医,日本医師会 認定健康スポーツ医 大圃 弘<br>※日本外科学会 外科認定医,日本外科学会 認定登録医,日本医師会 認定産業医 大関 美穂<br>※日本内科学会 認定内科医 大圃 研,根岸 良充,伊藤 洋平</p>
                                 </div>
                         </div>
                         <div class="point02">
-                                <p class="point-text">POINT 02</p>
+                                <div class="point-text-row">
+                                        <p class="point-text">POINT<span class="point-number">02</span></p>
+                                </div>
                                 <div class="point02-title">
-                                        <h2>駅チカ・駐車場20台完備<br>で通院も安心</h2>
-                                        <p>下館駅から徒歩4分。クリニック前には15台分の駐車スペースもご用意しています。</p>
+                                        <h2 class="point-text-1"><span class="point-text-1-1">駅チカ・駐車場20台完備</span><br>で通院も安心</h2>
+                                        <p class="point-text-3">下館駅から徒歩4分。クリニック前には15台分の駐車スペースもご用意しています。</p>
                                 </div>
                         </div>
                         <div class="point03">
-                                <p class="point-text">POINT 03</p>
+                                <div class="point-text-row">
+                                        <p class="point-text">POINT<span class="point-number">03</span></p>
+                                </div>
                                 <div class="point03-text">
-                                        <h2>土曜日、診療・検査可能</h2>
+                                        <h2 class="point-text-1"><span class="point-text-1-1">土曜日</span>、診療・検査可能</h2>
                                         <div class="point03-text-bottom">
                                                 <?php
                                                 // 診療時間の設定(true=診療あり, false=休診)
@@ -57,12 +61,14 @@
 
                                                 function mark(bool $open): string
                                                 {
-                                                        return $open ? "●" : "×<br>休診";
+                                                        return $open
+                                                        ? "<span class=\"mark-open\">●</span>"
+                                                        : "<span class=\"mark-closed\">×</span><br><span class=\"closed-label\">休診</span>";
                                                 }
                                                 ?>
 
                                                 <div class="schedule-wrapper">
-                                                        <table>
+                                                        <table class="schedule-table">
                                                                 <tr>
                                                                         <th>診療時間</th>
                                                                         <?php foreach (array_keys($schedule) as $day): ?>
@@ -84,6 +90,7 @@
                                                         </table>
                                                 </div>
                                         </div>
+                                        <p class="point-text-4">休診日：木曜、土曜午後、日曜、祝日</p>
                                 </div>
                         </div>
                 </div>
