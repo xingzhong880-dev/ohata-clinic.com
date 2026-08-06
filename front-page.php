@@ -97,27 +97,31 @@
                 </div>
         </div>
 </section>
-<section class="Announce">
-        <div class="Announce-container">
-                <div class="Announce-left">
-                        <div class="Announce-left-img">
+<section class="Information">
+        <div class="Information-container">
+                <div class="Information-left">
+                        <div class="Information-left-img">
                                 <img src="<?php echo get_theme_file_uri('img/doctor-1.webp'); ?>" alt="doctor">
                         </div>
-                        <div class="Announce-left-text">
-                                <div class="Announce-left-text-container">
-                                        <div class="Announce-left-text-1">
-                                                <p class="Announce-left-text-1-1">日本消化器内視鏡学会</p>
-                                                <p class="Announce-left-text-1-2">消化器内視鏡専門医による<br>負担の少ない内視鏡検査</p>
-                                                <p class="Announce-left-text-1-3">※日本消化器内視鏡学会 専門医 大圃 研、根岸 良充、伊藤 洋平</p>
+                        <div class="Information-left-text">
+                                <div class="Information-left-text-container">
+                                        <div class="Information-left-text-1">
+                                                <p class="Information-left-text-1-1">日本消化器内視鏡学会</p>
+                                                <p class="Information-left-text-1-2">消化器内視鏡専門医<span class="Information-left-text-1-4">による</span><br>負担<span class="Information-left-text-1-4">の</span>少ない内視鏡検査</p>
+                                                <p class="Information-left-text-1-3">※日本消化器内視鏡学会 専門医 大圃 研、根岸 良充、伊藤 洋平</p>
                                         </div>
-                                        <p class="Announce-left-text-2">胃カメラ<br>大腸カメラ</p>
+                                        <p class="Information-left-text-2">胃カメラ<br>大腸カメラ</p>
                                 </div>
                         </div>
-                        <div class="Announce-left-induction">
-                                <a class="Announce-left-induction-1">内視鏡検査についてはこちらから</a>
+                        <div class="Information-left-induction">
+                                <a class="Information-left-induction-1">内視鏡検査についてはこちらから</a>
                         </div>
                 </div>
-                <div class="Announce-right">
+                <div class="Information-right">
+                        <h2 class="Information-right-title">
+                                <i class="fa-solid fa-volume-high"></i>
+                                お知らせ
+                        </h2>
                         <?php
                         $oshirase_query = new WP_Query(array(
                                 'post_type'      => 'post',
@@ -128,11 +132,18 @@
                                 <ul class="oshirase-list">
                                         <?php while ($oshirase_query->have_posts()) : $oshirase_query->the_post(); ?>
                                                 <li>
+                                                <div class="oshirase-top">
                                                         <span class="date"><?php echo get_the_date('Y.m.d'); ?></span>
+                                                        <?php if ($oshirase_query->current_post === 0) : ?>
+                                                        <span class="new-badge">NEW</span>
+                                                        <?php endif; ?>
+                                                </div>
+                                                <div class="oshirase-bottom">
                                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                </div>
                                                 </li>
                                         <?php endwhile; ?>
-                                </ul>
+                                        </ul>
                                 <?php wp_reset_postdata(); ?>
                         <?php else : ?>
                                 <p>お知らせはありません</p>
