@@ -4,7 +4,7 @@
 <section class="Mv">
 
         <div class="introduction">
-                
+
                 <div class="title">
                         <img src="<?php echo get_theme_file_uri('img/clinic-img.webp'); ?>" alt="logo">
                         <div class="title-list">
@@ -26,7 +26,8 @@
                         <div class="point01">
                                 <div class="point-text-row">
                                         <p class="point-text">POINT<span class="point-number">01</span></p>
-                                </div><div class="point01-text">
+                                </div>
+                                <div class="point01-text">
                                         <h2 class="point-text-1">皆様のかかりつけ医として<br><span class="point-text-1-1">各診療科目に認定医が在中</span></h2>
                                         <p class="point-text-2">※日本消化器外科学会 認定医,日本外科学会 認定医,日本医師会 認定産業医,日本医師会 認定健康スポーツ医 大圃 弘<br>※日本外科学会 外科認定医,日本外科学会 認定登録医,日本医師会 認定産業医 大関 美穂<br>※日本内科学会 認定内科医 大圃 研,根岸 良充,伊藤 洋平</p>
                                 </div>
@@ -62,8 +63,8 @@
                                                 function mark(bool $open): string
                                                 {
                                                         return $open
-                                                        ? "<span class=\"mark-open\">●</span>"
-                                                        : "<span class=\"mark-closed\">×</span><br><span class=\"closed-label\">休診</span>";
+                                                                ? "<span class=\"mark-open\">●</span>"
+                                                                : "<span class=\"mark-closed\">×</span><br><span class=\"closed-label\">休診</span>";
                                                 }
                                                 ?>
 
@@ -96,5 +97,48 @@
                 </div>
         </div>
 </section>
+<section class="Announce">
+        <div class="Announce-container">
+                <div class="Announce-left">
+                        <div class="Announce-left-img">
+                                <img src="<?php echo get_theme_file_uri('img/doctor-1.webp'); ?>" alt="doctor">
+                        </div>
+                        <div class="Announce-left-text">
+                                <div class="Announce-left-text-container">
+                                        <div class="Announce-left-text-1">
+                                                <p class="Announce-left-text-1-1">日本消化器内視鏡学会</p>
+                                                <p class="Announce-left-text-1-2">消化器内視鏡専門医による<br>負担の少ない内視鏡検査</p>
+                                                <p class="Announce-left-text-1-3">※日本消化器内視鏡学会 専門医 大圃 研、根岸 良充、伊藤 洋平</p>
+                                        </div>
+                                        <p class="Announce-left-text-2">胃カメラ<br>大腸カメラ</p>
+                                </div>
+                        </div>
+                        <div class="Announce-left-induction">
+                                <a class="Announce-left-induction-1">内視鏡検査についてはこちらから</a>
+                        </div>
+                </div>
+                <div class="Announce-right">
+                        <?php
+                        $oshirase_query = new WP_Query(array(
+                                'post_type'      => 'post',
+                                'posts_per_page' => 3,
+                                'category_name'  => 'information',
+                        ));
+                        if ($oshirase_query->have_posts()) : ?>
+                                <ul class="oshirase-list">
+                                        <?php while ($oshirase_query->have_posts()) : $oshirase_query->the_post(); ?>
+                                                <li>
+                                                        <span class="date"><?php echo get_the_date('Y.m.d'); ?></span>
+                                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                </li>
+                                        <?php endwhile; ?>
+                                </ul>
+                                <?php wp_reset_postdata(); ?>
+                        <?php else : ?>
+                                <p>お知らせはありません</p>
+                        <?php endif; ?>
+                </div>
+        </div>
+</section>
 
-<?php get_footer(); ?>
+        <?php get_footer(); ?>
