@@ -874,7 +874,7 @@ Information
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 .Information-left {
     position: relative;
@@ -1062,6 +1062,7 @@ Access
   max-width: 1000px;
   text-align: center;
   margin: 0 auto;
+  padding: 20px;
 }
 .top-title{
     margin: 35px 0;
@@ -1259,10 +1260,11 @@ Access
 Medical-menu
 ---------------------------------------- */
 .Medical-menu{
+    width: 100%;
     background-color: #F1F8FF;
 }
 .Medical-menu-container{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .Medical-menu-title-1{
@@ -1275,18 +1277,57 @@ Medical-menu
     text-align: center;
 }
 .Medical-menu-list1{
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 .Medical-menu-list1-1{
-    width: 23%;
+    width: auto;
     padding: 20px;
     background-color: white;
+    border-radius: 25px;
+    gap: 10px;
 }
 .Medical-menu-circle{
+    width: 88px;
+    height: 88px;
     background-color: #F1F8FF;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Medical-menu-circle img{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .Medical-menu-list1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Medical-menu-list1-1{
+        display: flex;
+    }
+    .Medical-menu-circle{
+        width: 60px;
+        height: 60px;
+    }
+    .Medical-menu-text{
+        width: 80%;
+    }
+    .Medical-menu-text p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .Medical-menu-list1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* ----------------------------------------
