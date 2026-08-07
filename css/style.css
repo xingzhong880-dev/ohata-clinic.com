@@ -237,7 +237,7 @@ header::after {
     height: 8px;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.08),
+        rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0)
     );
     pointer-events: none;
@@ -310,11 +310,13 @@ header.is-scrolled .top-address {
 .header__nav-list{
   display: flex;
   align-items: center;
-  font-weight: bold;
   gap: 30px;
   margin-right: 2vw;
   padding: 15px 0;
   font-size: 14px;
+}
+.header__nav-list a{
+  font-weight: bold;
 }
 .header__nav-list span{
   color: #007FFF;
@@ -325,6 +327,14 @@ header.is-scrolled .top-address {
   background-color: #F38200;
   padding: 15px 50px;
   border-radius: 30px;
+}
+.header__nav-item:not(.header__nav-item2) a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.header__nav-item a:hover {
+  color: #007FFF;
 }
 
 @media screen and (min-width: 1001px) {
@@ -435,7 +445,6 @@ header.is-scrolled .top-address {
         max-width: 95%;
         height: calc(100vh - 56px);
         background: #fff;
-        box-shadow: -2px 0 12px rgba(0,0,0,0.15);
         z-index: 900;
         overflow-y: auto;
         transform: translateX(100%);
@@ -476,7 +485,6 @@ header.is-scrolled .top-address {
         align-items: center;
         text-align: center;
     }
-
     .nav-address-telephone {
         font-size: 30px;
         color: #F38200;
@@ -626,6 +634,7 @@ Mv
 }
 .point{
     width: 400px;
+    min-width: 400px;
     padding: 15px 20px 0 0;
     text-align: center;
 }
@@ -709,13 +718,22 @@ Mv
     font-size: 12px;
 }
 
-.schedule-wrapper {
+.schedule-wrapper,
+.schedule-wrapper-1 {
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
     width: 100%;
 }
-.schedule-table {
+.schedule-wrapper-1 {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+.schedule-table,
+.schedule-table-2  {
     border-collapse: separate;
     border-spacing: 0;
     width: 100%;
@@ -723,13 +741,21 @@ Mv
     border: 2px solid #B4E2E9;
     border-radius: 16px;
     overflow: hidden;
+    text-align: center;
 }
 th, td {
-    padding: 10px 14px;
+    padding: 10px 10px;
     text-align: center;
     vertical-align: middle;
     border-right: 1px solid white;
     border-bottom: 1px solid #B4E2E9;
+}
+.schedule-table-3 {
+    display: block;
+    white-space: nowrap;
+    font-size: clamp(8px, 2vw, 13px);
+    line-height: 1.3;
+    text-align: center;
 }
 .mark-open {
     color: #00A5C3;
@@ -848,10 +874,13 @@ Information
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding: 50px 0;
 }
 .Information-left {
     position: relative;
     width: 320px;
+    display: block;
+    cursor: pointer;
 }
 .Information-left-img img {
     width: 100%;
@@ -904,6 +933,10 @@ Information
 }
 .Information-left-induction-1 {
     display: inline-block;
+    bottom: 0;
+    left: 0;
+    transform: translateY(10%);
+    margin: 0;
     width: 100%;
     padding: 20px 30px;
     background: #007FFF;
@@ -933,6 +966,7 @@ Information
     max-width: 660px;
     height: 350px;
     padding: 40px;
+    margin-bottom: 10px;
     background-color: white;
     border-radius: 20px;
 }
@@ -984,20 +1018,275 @@ Information
     border-radius: 3px;
     letter-spacing: 0.5px;
 }
+.oshirase-list
 .oshirase-list a {
     text-decoration: none;
     font-size: 15px;
     line-height: 1.6;
     text-align: right;
-    transition: color 0.2s ease;
 }
-.oshirase-list a:hover {
-    color: #007FFF;
-    text-decoration: underline;
+.oshirase-list li:hover {
+    opacity: 0.6;
 }
 .Information-right p {
     font-size: 14px;
     padding: 14px 0;
+}
+
+.oval-1 {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-radius: 200px 200px 0 0;
+}
+
+@media screen and (max-width:1000px){
+    .Information-container{
+      flex-direction: column;
+      align-items: center;
+    }
+    .Information-left-induction-1{
+      transform: translateY(40%);
+    }
+}
+
+/* ----------------------------------------
+Access
+---------------------------------------- */
+.Access{
+  width: 100%;
+  padding-top: 20px;
+}
+.Access-container{
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+.top-title{
+    margin: 35px 0;
+}
+.Access-title-1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.Access-title-2{
+    font-size: 24px;
+    color: #007FFF;
+    font-weight: bolder;
+}
+.mark_v2-symbol {
+    font-size: 16px;
+    line-height: 1;
+}
+.schedule-table-2 {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: clamp(10px, 2.5vw, 16px);
+}
+.schedule-table-2 th{
+    font-size: 13px;
+}
+.schedule-table-2 td{
+    font-size: 14px;
+    white-space: nowrap;
+}
+.schedule-table-3{
+    font-size: 12px;
+}
+.schedule-table-2 th:first-child,
+.schedule-table-2 td:first-child {
+    width: 110px; 
+    min-width: 110px;
+    white-space: nowrap;
+}
+.schedule-table-2 tr:first-child th {
+    border-right: 1px solid #ffffff;
+}
+.schedule-table-2 tr:first-child th:last-child {
+    border-right: none;
+}
+.schedule-table-2 tr:not(:first-child) td {
+    border-right: 1px solid #B4E2E9; 
+}
+.schedule-table-2 tr:not(:first-child) td:last-child {
+    border-right: none;
+}
+.schedule-table-2 th,
+.schedule-table-2 td {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 8px 4px;
+    box-sizing: border-box; 
+}
+.schedule-table-2 th:not(:first-child),
+.schedule-table-2 td:not(:first-child) {
+    width: auto;
+}
+.mark_v2-symbol-group {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.mark_v2-symbol--pentagon {
+    font-size: 20px;
+    color: #007FFF;
+}
+.mark_v2-symbol--circle {
+    color: #F38200;
+}
+.mark_v2-symbol--star {
+    color: #48D267;
+}
+.Access-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin: 5px 0 0 10px;
+    font-size: 14px;
+}
+.Access-list-1{
+    display: inline-flex;
+    gap: 6px;
+    white-space: nowrap;
+}
+.Access-text{
+    font-size: 14px;
+    margin: 10px;
+}
+.Access-content{
+    display: flex;
+    gap: 20px;
+    margin: 30px 0 50px 0;
+}
+.Access-left-1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 0;
+}
+
+.Access-left-1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.Access-left-1 dt,
+.Access-left-1 dd {
+    margin: 0;
+    padding: 20px 5px;
+    box-sizing: border-box;
+}
+.Access-left-text-1 {
+    grid-column: 1;
+    font-weight: 500;
+    white-space: nowrap;
+    padding-right: 20px;
+    border-bottom: 1px solid #B6D4F2;
+    line-height: 1.8;
+}
+.Access-left-text-2 {
+    grid-column: 2;
+    border-bottom: 1px dotted #B6D4F2;
+    line-height: 1.8;
+}
+.Access-left-1 dt:last-of-type,
+.Access-left-1 dd:last-of-type {
+    border-bottom: none;
+}
+.Access-left-text-2 i{
+  font-size: 20px;
+  color: #484848;
+}
+.Access-bottom-btn{
+    background-color: #007FFF;
+    border-radius: 30px;
+    padding: 15px 50px;
+    color: white;
+}
+.Access-bottom{
+  margin: 100px 0;
+  max-width: 1000px;
+}
+.Access-bottom-text1{
+    font-size: 28px;
+    padding: 20px 100px;
+    background-color: #FFEE9B;
+    border-radius: 50px 50px 0 0;
+}
+.Access-bottom-text2{
+    padding: 20px 100px;
+    background-color: #FFF7E2;
+    border-radius: 0 0 50px 50px;
+    border:2px solid #FFEE9B ;
+}
+.oval-2 {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: #F1F8FF;
+  border-radius: 200px 200px 0 0;
+}
+
+@media screen and (max-width:1000px){
+    .mark_v2-symbol-group {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+@media screen and (max-width:760px){
+    .Access-content{
+        flex-direction: column;
+    }
+    .Access-right img{
+      width: 100%;
+    }
+    .Access-bottom-text1{
+        font-size: 22px;
+        padding: 20px 15px;
+    }
+    .Access-bottom-text2{
+        font-size: 14px;
+        padding: 20px 15px;
+    }
+}
+
+/* ----------------------------------------
+Medical-menu
+---------------------------------------- */
+.Medical-menu{
+    background-color: #F1F8FF;
+}
+.Medical-menu-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.Medical-menu-title-1{
+    font-size: 40px;
+    text-align: center;
+}
+.Medical-menu-title-2{
+    color: #007FFF;
+    font-size: 24px;
+    text-align: center;
+}
+.Medical-menu-list1{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Medical-menu-list1-1{
+    width: 23%;
+    padding: 20px;
+    background-color: white;
+}
+.Medical-menu-circle{
+    background-color: #F1F8FF;
 }
 
 /* ----------------------------------------
