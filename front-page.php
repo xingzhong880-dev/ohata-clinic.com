@@ -275,43 +275,55 @@
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle1.png'); ?>" alt="Medical menu">
                                         </div>
-                                        <h3>内科</h3>
-                                        <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        <div class="Medical-menu-text">
+                                                <h3>内科</h3>
+                                                <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        </div>
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle2.png'); ?>" alt="Medical menu">
                                         </div>
-                                        <h3>睡眠時無呼吸症候群</h3>
-                                        <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        <div class="Medical-menu-text">
+                                                <h3>睡眠時無呼吸症候群</h3>
+                                                <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        </div>        
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle3.png'); ?>" alt="Medical menu">
                                         </div>
-                                        <h3>CPAP治療</h3>
-                                        <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        <div class="Medical-menu-text">
+                                                <h3>CPAP治療</h3>
+                                                <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        </div>        
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle4.png'); ?>" alt="Medical menu">
                                         </div>
-                                        <h3>呼吸器内科</h3>
-                                        <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        <div class="Medical-menu-text">
+                                                <h3>呼吸器内科</h3>
+                                                <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        </div>        
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle5.png'); ?>" alt="Medical menu">
                                         </div>
-                                        <h3>生活習慣病</h3>
-                                        <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        <div class="Medical-menu-text">
+                                                <h3>生活習慣病</h3>
+                                                <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        </div>        
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle6.png'); ?>" alt="Medical menu">
                                         </div>
-                                        <h3>形成外科</h3>
-                                        <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        <div class="Medical-menu-text">
+                                                <h3>形成外科</h3>
+                                                <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        </div>
                                 </li>
                         </ul>
                 </div>
