@@ -98,7 +98,7 @@
 </section>
 <section class="Information">
         <div class="Information-container">
-                <a href="#" class="Information-left">
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="Information-left">
                         <div class="Information-left-img">
                                 <img src="<?php echo get_theme_file_uri('img/doctor-1.webp'); ?>" alt="doctor">
                         </div>
@@ -248,14 +248,14 @@
                                         <dt class="Access-left-text-1">駐車場</dt>
                                         <dd class="Access-left-text-2">15台</dd>
                                         <dt class="Access-left-text-1">アクセス</dt>
-                                        <dd class="Access-left-text-2">JR水戸線 下館駅北口より徒歩4分<br><i class="fa-solid fa-location-dot"></i><a href="#" class="Access-left-btn"> GoogleMAPで行き方を確認する</a></dd>
+                                        <dd class="Access-left-text-2">JR水戸線 下館駅北口より徒歩4分<br><a href="https://www.google.co.jp/maps/place/%E5%A4%A7%E5%9C%83%E3%82%AF%E3%83%AA%E3%83%8B%E3%83%83%E3%82%AF/@36.306508,139.9779237,17z/data=!3m1!4b1!4m6!3m5!1s0x601f551ef4ceaae1:0x87efc751136cd83a!8m2!3d36.306508!4d139.9804986!16s%2Fg%2F1tdjr723" target="_blank" rel="noopener noreferrer" class="Access-left-btn"><i class="fa-solid fa-location-dot"></i> GoogleMAPで行き方を確認する</a></dd>
                                 </dl>
                         </div>
                         <div class="Access-right">
                                 <img src="<?php echo get_theme_file_uri('img/map.webp'); ?>" alt="map">
                         </div>
                 </div>
-                <a href="#" class="Access-bottom-btn">診療時間・アクセスはこちら</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="Access-bottom-btn">診療時間・アクセスはこちら</a>
                 <div class="Access-bottom">
                         <p class="Access-bottom-text1"><img src="<?php echo get_theme_file_uri('img/sick.webp'); ?>" alt="sick-icon"> 発熱・風邪症状のある方へ</p>
                         <p class="Access-bottom-text2">発熱・風邪症状のある患者さんの診療・各種検査を行っております。<br>発熱外来は１５時からの予約制なので、必ず事前のお電話をお願いいたします。</p>
@@ -273,59 +273,156 @@
                         <ul class="Medical-menu-list1">
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle1.png'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/Rectangle1.webp'); ?>" alt="内科">
                                         </div>
                                         <div class="Medical-menu-text">
-                                                <h3>内科</h3>
+                                                <h3 class="Medical-menu-text-title">内科</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
                                         </div>
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle2.png'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/Rectangle2.webp'); ?>" alt="睡眠時無呼吸症候群">
                                         </div>
                                         <div class="Medical-menu-text">
-                                                <h3>睡眠時無呼吸症候群</h3>
-                                                <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
-                                        </div>        
-                                </li>
-                                <li class="Medical-menu-list1-1">
-                                        <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle3.png'); ?>" alt="Medical menu">
-                                        </div>
-                                        <div class="Medical-menu-text">
-                                                <h3>CPAP治療</h3>
+                                                <h3 class="Medical-menu-text-title">睡眠時無呼吸症候群</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
                                         </div>        
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle4.png'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/Rectangle3.webp'); ?>" alt="CPAP治療">
                                         </div>
                                         <div class="Medical-menu-text">
-                                                <h3>呼吸器内科</h3>
+                                                <h3 class="Medical-menu-text-title">CPAP治療</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
                                         </div>        
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle5.png'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/Rectangle4.webp'); ?>" alt="呼吸器内科">
                                         </div>
                                         <div class="Medical-menu-text">
-                                                <h3>生活習慣病</h3>
+                                                <h3 class="Medical-menu-text-title">呼吸器内科</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
                                         </div>        
                                 </li>
                                 <li class="Medical-menu-list1-1">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle6.png'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/Rectangle5.webp'); ?>" alt="生活習慣病">
                                         </div>
                                         <div class="Medical-menu-text">
-                                                <h3>形成外科</h3>
+                                                <h3 class="Medical-menu-text-title">生活習慣病</h3>
+                                                <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
+                                        </div>        
+                                </li>
+                                <li class="Medical-menu-list1-1">
+                                        <div class="Medical-menu-circle">
+                                                <img src="<?php echo get_theme_file_uri('img/Rectangle6.webp'); ?>" alt="形成外科">
+                                        </div>
+                                        <div class="Medical-menu-text">
+                                                <h3 class="Medical-menu-text-title">形成外科</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
                                         </div>
                                 </li>
                         </ul>
+                </div>
+        </div>
+</section>
+<section class="Greeting">
+        <div class="oval-3"></div>
+        <div class="Greeting-container">
+                <div class="top-title">
+                        <h2 class="Greeting-title-1">院長ごあいさつ</h2>
+                        <p class="Greeting-title-2">Greeting</p>
+                </div>
+                <div class="Greeting-top">
+                        <p>当院のホームページをご覧いただきありがとうございます。<br><br>
+                        大圃クリニックは、これまで長きにわたり、地域の皆様の健康を支える「身近な医療機関」として歩んできました。現在では、私の息子を含む複数の内視鏡専門医が診療を担当し、幅広い年代の患者さんに安心して検査・治療を受けていただける体制を整えています。<br><br>
+                        私自身、長年にわたり外科・内科の両面から地域医療に携わってまいりましたが、医療技術は日々進化しており、それを現場に反映させる努力は今も変わりません。<br><br>
+                        特に、近年力を入れている内視鏡診療は、「早期発見・早期治療」において非常に重要な取組の一つです。<br><br>
+                        クリニックであっても、高度な診断力と温かい対応を両立する。<br>それが、私たちが目指す「地域のかかりつけ医」のあり方です。これからも変わらぬ姿勢で、皆様にとって頼れる医療機関であり続けたいと考えております。</p>
+                        <div class="Greeting-top-img">
+                                <img src="<?php echo get_theme_file_uri('img/Frame.webp'); ?>" alt="大圃クリニック院長">
+                                <p class="Greeting-top-name">大圃クリニック 院長<br><span class="Greeting-top-name1">大圃 弘</span><br><span class="Greeting-top-name2">Ohata Hiroshi</span></p>
+                        </div>
+                </div>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="Greeting-bottom">医師紹介はこちら</a>
+        </div>
+</section>
+<section class="Reasons">
+        <div class="oval-4"></div>
+        <div class="Reasons-container">
+                <div class="top-title">
+                        <h2 class="Greeting-title-1">当院の内視鏡検査が選ばれる理由</h2>
+                        <p class="Greeting-title-2">Reasons</p>
+                </div>
+                <div class="Reasons-box">
+                        <div class="Reasons-box1">
+                                <div class="Reasons-box1-bg"></div>
+                                <div class="Reasons-box2">
+                                        <div class="Reasons-box2-1">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                        </div>
+                                        <div class="Reasons-box2-2">
+                                                <p class="Reasons-box2-top">01</p>
+                                                <p class="Reasons-box2-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
+                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="Reasons-box3">
+                                <div class="Reasons-box3-bg"></div>
+                                <div class="Reasons-box4">
+                                        <div class="Reasons-box4-1">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                        </div>
+                                        <div class="Reasons-box4-2">
+                                                <p class="Reasons-box4-top">01</p>
+                                                <p class="Reasons-box4-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
+                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="Reasons-box1">
+                                <div class="Reasons-box1-bg"></div>
+                                <div class="Reasons-box2">
+                                        <div class="Reasons-box2-1">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                        </div>
+                                        <div class="Reasons-box2-2">
+                                                <p class="Reasons-box2-top">01</p>
+                                                <p class="Reasons-box2-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
+                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="Reasons-box3">
+                                <div class="Reasons-box3-bg"></div>
+                                <div class="Reasons-box4">
+                                        <div class="Reasons-box4-1">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                        </div>
+                                        <div class="Reasons-box4-2">
+                                                <p class="Reasons-box4-top">01</p>
+                                                <p class="Reasons-box4-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
+                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="Reasons-box1">
+                                <div class="Reasons-box1-bg"></div>
+                                <div class="Reasons-box2">
+                                        <div class="Reasons-box2-1">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                        </div>
+                                        <div class="Reasons-box2-2">
+                                                <p class="Reasons-box2-top">01</p>
+                                                <p class="Reasons-box2-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
+                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
         </div>
 </section>

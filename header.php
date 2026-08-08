@@ -47,14 +47,14 @@
                 </div>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="#">ホーム</a></li>
-                        <li class="header__nav-item"><a href="#">診療時間・アクセス</a></li>
-                        <li class="header__nav-item"><a href="#">医師紹介</a></li>
-                        <li class="header__nav-item"><a href="#">診療内容一覧 <span>∨</span></a></li>
-                        <li class="header__nav-item"><a href="#">お知らせ</a></li>
-                        <li class="header__nav-item"><a href="#">クリニック紹介</a></li>
-                        <li class="header__nav-item"><a href="#">当院の内視鏡検査について</a></li>
-                        <li class="header__nav-item2"><a href="#">診療予約</a></li>
+                        <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
+                        <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">診療時間・アクセス</a></li>
+                        <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">医師紹介</a></li>
+                        <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">診療内容一覧 <span>∨</span></a></li>
+                        <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">お知らせ</a></li>
+                        <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">クリニック紹介</a></li>
+                        <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">当院の内視鏡検査について</a></li>
+                        <li class="header__nav-item2"><a href="<?php echo esc_url(home_url('/')); ?>">診療予約</a></li>
                     </ul>
                     <div class="nav-address">
                         <div class="nav-address-telephone">
