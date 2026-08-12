@@ -76,3 +76,54 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+/* ----------------------------------------
+診療内容一覧 dropdown（モバイル用トグル）
+---------------------------------------- */
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownItem = document.querySelector('.header__nav-item--dropdown');
+    if (!dropdownItem) return;
+
+    const trigger = dropdownItem.querySelector(':scope > a');
+    if (!trigger) return;
+
+    const mql = window.matchMedia('(max-width: 1000px)');
+
+    trigger.addEventListener('click', function (e) {
+        if (!mql.matches) return;
+        e.preventDefault();
+        const isOpen = dropdownItem.classList.toggle('is-open');
+        trigger.setAttribute('aria-expanded', isOpen);
+    });
+
+    const hamburger = document.querySelector('.hamburger');
+    if (hamburger) {
+        hamburger.addEventListener('click', function () {
+            if (!hamburger.classList.contains('is-open')) {
+                dropdownItem.classList.remove('is-open');
+            }
+        });
+    }
+
+    mql.addEventListener('change', function () {
+        dropdownItem.classList.remove('is-open');
+    });
+});
+
+/* ----------------------------------------
+FAQ
+---------------------------------------- */
+document.querySelectorAll('.FAQ-question').forEach(function(question) {
+    question.addEventListener('click', function() {
+        const item = this.parentElement;
+        const icon = this.querySelector('.FAQ-icon');
+        
+        item.classList.toggle('active');
+        
+        if (item.classList.contains('active')) {
+            icon.textContent = 'ー';
+        } else {
+            icon.textContent = '＋';
+        }
+    });
+});

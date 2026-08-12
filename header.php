@@ -50,7 +50,59 @@
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">診療時間・アクセス</a></li>
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">医師紹介</a></li>
-                        <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">診療内容一覧 <span>∨</span></a></li>
+                        <li class="header__nav-item header__nav-item--dropdown">
+                            <a href="<?php echo esc_url(home_url('/')); ?>">診療内容一覧 <span>∨</span></a>
+                            <ul class="header-dropdown">
+                                <li class="header-dropdown-item">
+                                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                                        <div class="Medical-menu-circle-top">
+                                            <img src="<?php echo get_theme_file_uri('img/Rectangle1.webp'); ?>" alt="内科">
+                                        </div>
+                                        <h3 class="Medical-menu-text-title">内科</h3>
+                                    </a>
+                                </li>
+                                <li class="header-dropdown-item">
+                                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                                        <div class="Medical-menu-circle-top">
+                                            <img src="<?php echo get_theme_file_uri('img/Rectangle2.webp'); ?>" alt="睡眠時無呼吸症候群">
+                                        </div>
+                                        <h3 class="Medical-menu-text-title">睡眠時無呼吸症候群</h3>
+                                    </a>
+                                </li>
+                                <li class="header-dropdown-item">
+                                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                                        <div class="Medical-menu-circle-top">
+                                            <img src="<?php echo get_theme_file_uri('img/Rectangle3.webp'); ?>" alt="CPAP治療">
+                                        </div>
+                                        <h3 class="Medical-menu-text-title">CPAP治療</h3>
+                                    </a>
+                                </li>
+                                <li class="header-dropdown-item">
+                                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                                        <div class="Medical-menu-circle-top">
+                                            <img src="<?php echo get_theme_file_uri('img/Rectangle4.webp'); ?>" alt="呼吸器内科">
+                                        </div>
+                                        <h3 class="Medical-menu-text-title">呼吸器内科</h3>
+                                    </a>
+                                </li>
+                                <li class="header-dropdown-item">
+                                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                                        <div class="Medical-menu-circle-top">
+                                            <img src="<?php echo get_theme_file_uri('img/Rectangle5.webp'); ?>" alt="生活習慣病">
+                                        </div>
+                                        <h3 class="Medical-menu-text-title">生活習慣病</h3>
+                                    </a>
+                                </li>
+                                <li class="header-dropdown-item">
+                                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                                        <div class="Medical-menu-circle-top">
+                                            <img src="<?php echo get_theme_file_uri('img/Rectangle6.webp'); ?>" alt="形成外科">
+                                        </div>
+                                        <h3 class="Medical-menu-text-title">形成外科</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">お知らせ</a></li>
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">クリニック紹介</a></li>
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">当院の内視鏡検査について</a></li>
