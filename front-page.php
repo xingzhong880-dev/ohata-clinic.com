@@ -227,7 +227,8 @@
                         </li>
                         <li class="Access-list-1">
                                 <span class="mark_v2-symbol mark_v2-symbol--diamond">◆<span class="visually-hidden"></span></span>
-                                <span class="Access-list-text">大関医師</span></li>
+                                <span class="Access-list-text">大関医師</span>
+                        </li>
                         <li class="Access-list-1">
                                 <span class="mark_v2-symbol mark_v2-symbol--pentagon">⬟</span>
                                 <span class="Access-list-text">消化器内科医師（根岸/伊藤）</span>
@@ -271,7 +272,7 @@
                 </div>
                 <div class="Medical-menu-list">
                         <ul class="Medical-menu-list1">
-                                <li class="Medical-menu-list1-1">
+                                <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle1.webp'); ?>" alt="内科">
                                         </div>
@@ -279,44 +280,44 @@
                                                 <h3 class="Medical-menu-text-title">内科</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
                                         </div>
-                                </li>
-                                <li class="Medical-menu-list1-1">
+                                </a></li>
+                                <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle2.webp'); ?>" alt="睡眠時無呼吸症候群">
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">睡眠時無呼吸症候群</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
-                                        </div>        
-                                </li>
-                                <li class="Medical-menu-list1-1">
+                                        </div>
+                                </a></li>
+                                <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle3.webp'); ?>" alt="CPAP治療">
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">CPAP治療</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
-                                        </div>        
-                                </li>
-                                <li class="Medical-menu-list1-1">
+                                        </div>
+                                </a></li>
+                                <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle4.webp'); ?>" alt="呼吸器内科">
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">呼吸器内科</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
-                                        </div>        
-                                </li>
-                                <li class="Medical-menu-list1-1">
+                                        </div>
+                                </a></li>
+                                <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle5.webp'); ?>" alt="生活習慣病">
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">生活習慣病</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
-                                        </div>        
-                                </li>
-                                <li class="Medical-menu-list1-1">
+                                        </div>
+                                </a></li>
+                                <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
                                                 <img src="<?php echo get_theme_file_uri('img/Rectangle6.webp'); ?>" alt="形成外科">
                                         </div>
@@ -324,7 +325,7 @@
                                                 <h3 class="Medical-menu-text-title">形成外科</h3>
                                                 <p> この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。 </p>
                                         </div>
-                                </li>
+                                </a></li>
                         </ul>
                 </div>
         </div>
@@ -338,10 +339,10 @@
                 </div>
                 <div class="Greeting-top">
                         <p>当院のホームページをご覧いただきありがとうございます。<br><br>
-                        大圃クリニックは、これまで長きにわたり、地域の皆様の健康を支える「身近な医療機関」として歩んできました。現在では、私の息子を含む複数の内視鏡専門医が診療を担当し、幅広い年代の患者さんに安心して検査・治療を受けていただける体制を整えています。<br><br>
-                        私自身、長年にわたり外科・内科の両面から地域医療に携わってまいりましたが、医療技術は日々進化しており、それを現場に反映させる努力は今も変わりません。<br><br>
-                        特に、近年力を入れている内視鏡診療は、「早期発見・早期治療」において非常に重要な取組の一つです。<br><br>
-                        クリニックであっても、高度な診断力と温かい対応を両立する。<br>それが、私たちが目指す「地域のかかりつけ医」のあり方です。これからも変わらぬ姿勢で、皆様にとって頼れる医療機関であり続けたいと考えております。</p>
+                                大圃クリニックは、これまで長きにわたり、地域の皆様の健康を支える「身近な医療機関」として歩んできました。現在では、私の息子を含む複数の内視鏡専門医が診療を担当し、幅広い年代の患者さんに安心して検査・治療を受けていただける体制を整えています。<br><br>
+                                私自身、長年にわたり外科・内科の両面から地域医療に携わってまいりましたが、医療技術は日々進化しており、それを現場に反映させる努力は今も変わりません。<br><br>
+                                特に、近年力を入れている内視鏡診療は、「早期発見・早期治療」において非常に重要な取組の一つです。<br><br>
+                                クリニックであっても、高度な診断力と温かい対応を両立する。<br>それが、私たちが目指す「地域のかかりつけ医」のあり方です。これからも変わらぬ姿勢で、皆様にとって頼れる医療機関であり続けたいと考えております。</p>
                         <div class="Greeting-top-img">
                                 <img src="<?php echo get_theme_file_uri('img/Frame.webp'); ?>" alt="大圃クリニック院長">
                                 <p class="Greeting-top-name">大圃クリニック 院長<br><span class="Greeting-top-name1">大圃 弘</span><br><span class="Greeting-top-name2">Ohata Hiroshi</span></p>
@@ -375,12 +376,12 @@
                                 <div class="Reasons-box3-bg"></div>
                                 <div class="Reasons-box4">
                                         <div class="Reasons-box4-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-2.webp'); ?>" alt="Medical menu">
                                         </div>
                                         <div class="Reasons-box4-2">
-                                                <p class="Reasons-box4-top">01</p>
-                                                <p class="Reasons-box4-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
-                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                                <p class="Reasons-box4-top">02</p>
+                                                <p class="Reasons-box4-middle">JR下館駅から徒歩約4分<br>通いやすい立地</p>
+                                                <p class="Reasons-box2-bottom">当院は、JR水戸線・真岡鐵道・関東鉄道常総線の下館駅から徒歩約4分の場所にありアクセスの良さが特長です。<br><br>また、無料駐車場（15台分）も完備しており、お車での通院にも便利です。<br>さらに土曜日も午前診療を行っているため、平日にお仕事やご予定のある方でも通院しやすい環境を整えています。</p>
                                         </div>
                                 </div>
                         </div>
@@ -388,12 +389,12 @@
                                 <div class="Reasons-box1-bg"></div>
                                 <div class="Reasons-box2">
                                         <div class="Reasons-box2-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-3.webp'); ?>" alt="Medical menu">
                                         </div>
                                         <div class="Reasons-box2-2">
-                                                <p class="Reasons-box2-top">01</p>
-                                                <p class="Reasons-box2-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
-                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                                <p class="Reasons-box2-top">03</p>
+                                                <p class="Reasons-box2-middle">高度医療機関との連携による<br>診療の質の向上</p>
+                                                <p class="Reasons-box2-bottom">大圃クリニックでは、患者さんにより安心で質の高い診療を提供できるよう、茨城県西部メディカルセンター、協和中央病院、つくばメディカルセンター、自治医科大学をはじめ、NTT東日本関東病院など高度医療機関と技術交流や連携体制の構築を進めています。<br><br>必要に応じて検査技術や診療経験を共有することで、より専門的な視点を診療に反映し検査や治療の精度向上と、患者さんの状態に応じて迅速に専門医への紹介や適切な検査へつなげる体制を整えております。</p>
                                         </div>
                                 </div>
                         </div>
@@ -401,12 +402,12 @@
                                 <div class="Reasons-box3-bg"></div>
                                 <div class="Reasons-box4">
                                         <div class="Reasons-box4-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-4.webp'); ?>" alt="Medical menu">
                                         </div>
                                         <div class="Reasons-box4-2">
-                                                <p class="Reasons-box4-top">01</p>
-                                                <p class="Reasons-box4-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
-                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                                <p class="Reasons-box4-top">04</p>
+                                                <p class="Reasons-box4-middle">1946年開院<br>地域に根ざした医療の提供</p>
+                                                <p class="Reasons-box2-bottom">大圃クリニックは、創設以来70年以上にわたり、筑西市の地域医療を支えてきました。<br><br>時代の変化に合わせて診療内容や体制を進化させながらも、地域に寄り添うという原点を変えずに医療を提供し続けています。<br><br>ご家族ぐるみで通ってくださる方や、何世代にもわたって受診される患者様も多く、長年にわたり信頼を育んできたクリニックとして、これからも地域に根ざした医療を続けてまいります。</p>
                                         </div>
                                 </div>
                         </div>
@@ -414,16 +415,131 @@
                                 <div class="Reasons-box1-bg"></div>
                                 <div class="Reasons-box2">
                                         <div class="Reasons-box2-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                                <img src="<?php echo get_theme_file_uri('img/img_reason-5.webp'); ?>" alt="Medical menu">
                                         </div>
                                         <div class="Reasons-box2-2">
-                                                <p class="Reasons-box2-top">01</p>
-                                                <p class="Reasons-box2-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
-                                                <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
+                                                <p class="Reasons-box2-top">05</p>
+                                                <p class="Reasons-box2-middle">わかりやすく、納得できる<br>医療の提供</p>
+                                                <p class="Reasons-box2-bottom">当院では、患者様一人ひとりが安心して診療を受けられるよう症状や検査内容について、専門用語を避けたやさしい言葉での説明を心がけています。<br>検査や処方の意図をきちんと理解いただいたうえで治療を進めることが、信頼関係を築く第一歩だと考えています。<br>わからないことがあればその場で質問できる雰囲気を大切にし、不安や疑問を残さない丁寧な対応をスタッフ一同で取り組んでいます。</p>
                                         </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="Reasons-btn">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="Reasons-bottom">クリニック紹介はこちら</a>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="Reasons-bottom"><i class="Reasons-mark">🔰</i>初めてご来院される方へ</a>
+                </div>
+        </div>
+        <div class="oval-1"></div>
+</section>
+<section class="FAQ">
+        <div class="FAQ-container">
+                <div class="top-title">
+                        <h2 class="Access-title-1">よくあるご質問</h2>
+                        <p class="Access-title-2">FAQ</p>
+                </div>
+                <div class="FAQ-list">
+                        <div class="FAQ-item">
+                                <div class="FAQ-question">
+                                        <span><span class="qa-mark">Q</span>予約は必要ですか？</span>
+                                        <span class="FAQ-icon">＋</span>
+                                </div>
+                                <div class="FAQ-answer">
+                                        <p><span class="qa-mark-2">A</span><span class="FAQ-answer-text">診療は予約制ではありません。診療時間内であれば直接ご来院いただければ受診できます。<br>ただし、風邪症状のある方、検査（内視鏡・形成外科など）をご希望の方は、別途対応が必要になりますので、事前にお問い合わせください。</span></p>
+                                </div>
+                        </div>
+                        <div class="FAQ-item">
+                                <div class="FAQ-question">
+                                        <span><span class="qa-mark">Q</span>朝は何時から受付していますか？</span>
+                                        <span class="FAQ-icon">＋</span>
+                                </div>
+                                <div class="FAQ-answer">
+                                        <p><span class="qa-mark-2">A</span>診療は予約制ではありません。診療時間内であれば直接ご来院いただければ受診できます。<br>ただし、風邪症状のある方、検査（内視鏡・形成外科など）をご希望の方は、別途対応が必要になりますので、事前にお問い合わせください。</p>
+                                </div>
+                        </div>
+                        <div class="FAQ-item">
+                                <div class="FAQ-question">
+                                        <span><span class="qa-mark">Q</span>内視鏡検査の予約はどのようにすればよいですか？</span>
+                                        <span class="FAQ-icon">＋</span>
+                                </div>
+                                <div class="FAQ-answer">
+                                        <p><span class="qa-mark-2">A</span>診療は予約制ではありません。診療時間内であれば直接ご来院いただければ受診できます。<br>ただし、風邪症状のある方、検査（内視鏡・形成外科など）をご希望の方は、別途対応が必要になりますので、事前にお問い合わせください。</p>
+                                </div>
+                        </div>
+                        <div class="FAQ-item">
+                                <div class="FAQ-question">
+                                        <span><span class="qa-mark">Q</span>形成外科の治療を予約したいのですが、どうすればよいですか？</span>
+                                        <span class="FAQ-icon">＋</span>
+                                </div>
+                                <div class="FAQ-answer">
+                                        <p><span class="qa-mark-2">A</span>診療は予約制ではありません。診療時間内であれば直接ご来院いただければ受診できます。<br>ただし、風邪症状のある方、検査（内視鏡・形成外科など）をご希望の方は、別途対応が必要になりますので、事前にお問い合わせください。</p>
                                 </div>
                         </div>
                 </div>
         </div>
 </section>
+<section class="Corporation">
+        <div class="Corporation-container">
+                <div class="top-title">
+                        <h2 class="Medical-menu-title-1">医療法人 桜仁会</h2>
+                        <p class="Medical-menu-title-2">東京都</p>
+                </div>
+                <div class="Corporation-box">
+                        <a href="https://oujinkai.net/" target="_blank" rel="noopener noreferrer" class="Corporation-box0">
+                                <div class="Corporation-box1">
+                                        <div class="Corporation-box-left">
+                                                <img src="<?php echo get_theme_file_uri('img/image1.webp'); ?>" alt="さくら内視鏡クリニック品川">
+                                        </div>
+                                        <div class="Corporation-box-right">
+                                                <img src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン">
+                                        </div>
+                                </div>
+                                <div class="Corporation-box-bottom">
+                                        <p>東急多摩川線 武蔵新田駅から徒歩3分</p>
+                                </div>
+                        </a>
+                        <a href="https://emmykids.com/" target="_blank" rel="noopener noreferrer" class="Corporation-box0">
+                                <div class="Corporation-box1">
+                                        <div class="Corporation-box-left">
+                                                <img src="<?php echo get_theme_file_uri('img/image2.webp'); ?>" alt="エミーキッズクリニック">
+                                        </div>
+                                        <div class="Corporation-box-right">
+                                                <img src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン">
+                                        </div>
+                                </div>
+                                <div class="Corporation-box-bottom">
+                                        <p>品川駅港南口より徒歩2分</p>
+                                </div>
+                        </a>
+                        <a href="https://igarashi-derma.com/" target="_blank" rel="noopener noreferrer" class="Corporation-box0">
+                                <div class="Corporation-box1">
+                                        <div class="Corporation-box-left">
+                                                <img src="<?php echo get_theme_file_uri('img/image3.webp'); ?>" alt="いがらし皮膚科東五反田">
+                                        </div>
+                                        <div class="Corporation-box-right">
+                                                <img src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン">
+                                        </div>
+                                </div>
+                                <div class="Corporation-box-bottom">
+                                        <p>五反田駅東口から徒歩約7分</p>
+                                </div>
+                        </a>
+                        <a href="https://chidori-res.com/" target="_blank" rel="noopener noreferrer" class="Corporation-box0">
+                                <div class="Corporation-box1">
+                                        <div class="Corporation-box-left">
+                                                <img src="<?php echo get_theme_file_uri('img/image4.webp'); ?>" alt="ちどり内科呼吸器内科クリニック">
+                                        </div>
+                                        <div class="Corporation-box-right">
+                                                <img src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン">
+                                        </div>
+                                </div>
+                                <div class="Corporation-box-bottom">
+                                        <p>東急池上線 千鳥町駅すぐ</p>
+                                </div>
+                        </a>
+                </div>
+        </div>
+        <div class="oval-5"></div>
+</section>
+
 <?php get_footer(); ?>
