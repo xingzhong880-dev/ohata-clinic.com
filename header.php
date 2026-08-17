@@ -28,8 +28,8 @@
         <div class="header__inner">
             <div class="top-address">
                 <div class="top-address-left">
-                    <p>茨城県筑西市の内科なら大圃クリニック｜内科学会認定医在籍</p>
-                    <p>〒308-0031 茨城県筑西市丙１５３−４　JR水戸線 下館駅北口より徒歩4分</p>
+                    <h1>茨城県筑西市の内科なら大圃クリニック｜内科学会認定医在籍</h1>
+                    <address>〒308-0031 茨城県筑西市丙１５３−４　JR水戸線 下館駅北口より徒歩4分</address>
                 </div>
                 <div class="top-address-right">
                     <div class="top-address-text">
@@ -37,7 +37,7 @@
                         <p>休診日　　木曜、土曜午後、日曜、祝日</p>
                     </div>
                     <div class="top-address-telephone">
-                        <p><i class="fa-solid fa-phone"></i> 0296-21-0123</p>
+                        <address class="top-address-telephone-1"><i class="fa-solid fa-phone"></i> 0296-21-0123</address>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,9 @@
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">診療時間・アクセス</a></li>
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">医師紹介</a></li>
                         <li class="header__nav-item header__nav-item--dropdown">
-                            <a href="<?php echo esc_url(home_url('/')); ?>">診療内容一覧 <span>∨</span></a>
+                            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle-checkbox">
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="dropdown-link-pc">診療内容一覧 <span>∨</span></a>
+                            <label for="dropdown-toggle" class="dropdown-link-sp">診療内容一覧 <span>∨</span></label>
                             <ul class="header-dropdown">
                                 <li class="header-dropdown-item">
                                     <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -110,7 +112,7 @@
                     </ul>
                     <div class="nav-address">
                         <div class="nav-address-telephone">
-                            <p><i class="fa-solid fa-phone"></i> 0296-21-0123</p>
+                            <address><i class="fa-solid fa-phone"></i> 0296-21-0123</address>
                         </div>
                         <div class="nav-address-text">
                             <p><span class="nav-address-label">午前</span> 9:00-12:30</p>

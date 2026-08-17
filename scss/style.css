@@ -13,6 +13,12 @@ body, * {
   text-align: justify;
 }
 
+@media screen and (max-width:1000px) {
+  body {
+    padding-bottom: 60px;
+  }
+}
+
 main.is-page {
   padding-top: 48px;
 }
