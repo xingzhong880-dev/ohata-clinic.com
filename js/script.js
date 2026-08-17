@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector('.header__nav');
     const overlay = document.querySelector('.nav-overlay');
     const body = document.body;
+    const dropdownCheckbox = document.getElementById('dropdown-toggle');
 
     if (!hamburger || !nav) return;
 
@@ -60,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (overlay) overlay.classList.toggle('is-open', isOpen);
         body.classList.toggle('is-menu-open', isOpen);
         hamburger.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+        if (!isOpen && dropdownCheckbox) {
+            dropdownCheckbox.checked = false;
+        }
     }
 
     hamburger.addEventListener('click', toggleMenu);
@@ -74,39 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 toggleMenu();
             }
         });
-    });
-});
-
-/* ----------------------------------------
-診療内容一覧 dropdown（モバイル用トグル）
----------------------------------------- */
-document.addEventListener('DOMContentLoaded', function () {
-    const dropdownItem = document.querySelector('.header__nav-item--dropdown');
-    if (!dropdownItem) return;
-
-    const trigger = dropdownItem.querySelector(':scope > a');
-    if (!trigger) return;
-
-    const mql = window.matchMedia('(max-width: 1000px)');
-
-    trigger.addEventListener('click', function (e) {
-        if (!mql.matches) return;
-        e.preventDefault();
-        const isOpen = dropdownItem.classList.toggle('is-open');
-        trigger.setAttribute('aria-expanded', isOpen);
-    });
-
-    const hamburger = document.querySelector('.hamburger');
-    if (hamburger) {
-        hamburger.addEventListener('click', function () {
-            if (!hamburger.classList.contains('is-open')) {
-                dropdownItem.classList.remove('is-open');
-            }
-        });
-    }
-
-    mql.addEventListener('change', function () {
-        dropdownItem.classList.remove('is-open');
     });
 });
 

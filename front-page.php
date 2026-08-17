@@ -17,7 +17,7 @@
                                         <li class="title-list-2">形成外科</li>
                                         <li class="title-list-1">皮膚科</li>
                                 </ul>
-                                <h1 class="title-text">地域に寄り添い、<span class="title-text-1">80</span>年。</h1>
+                                <p class="title-text">地域に寄り添い、<span class="title-text-1">80</span>年。</p>
                                 <p class="title-text-top">これからもあなたの“かかりつけ医“として<br class="sp-hide-br">一人ひとりに寄り添いながら、安心して通えるクリニックを目指します。</p>
                                 <p class="title-text-bottom">※ 1946年から2026年現在まで</p>
                         </div>
@@ -28,7 +28,7 @@
                                         <p class="point-text">POINT<span class="point-number">01</span></p>
                                 </div>
                                 <div class="point01-text">
-                                        <h2 class="point-text-1">皆様のかかりつけ医として<br><span class="point-text-1-1">各診療科目に認定医が在中</span></h2>
+                                        <h3 class="point-text-1">皆様のかかりつけ医として<br><span class="point-text-1-1">各診療科目に認定医が在中</span></h3>
                                         <p class="point-text-2">※日本消化器外科学会 認定医,日本外科学会 認定医,日本医師会 認定産業医,日本医師会 認定健康スポーツ医 大圃 弘<br>※日本外科学会 外科認定医,日本外科学会 認定登録医,日本医師会 認定産業医 大関 美穂<br>※日本内科学会 認定内科医 大圃 研,根岸 良充,伊藤 洋平</p>
                                 </div>
                         </div>
@@ -37,7 +37,7 @@
                                         <p class="point-text">POINT<span class="point-number">02</span></p>
                                 </div>
                                 <div class="point02-title">
-                                        <h2 class="point-text-1"><span class="point-text-1-1">駅チカ・駐車場20台完備</span><br>で通院も安心</h2>
+                                        <h3 class="point-text-1"><span class="point-text-1-1">駅チカ・駐車場20台完備</span><br>で通院も安心</h3>
                                         <p class="point-text-3">下館駅から徒歩4分。クリニック前には15台分の駐車スペースもご用意しています。</p>
                                 </div>
                         </div>
@@ -46,7 +46,7 @@
                                         <p class="point-text">POINT<span class="point-number">03</span></p>
                                 </div>
                                 <div class="point03-text">
-                                        <h2 class="point-text-1"><span class="point-text-1-1">土曜日</span>、診療・検査可能</h2>
+                                        <h3 class="point-text-1"><span class="point-text-1-1">土曜日</span>、診療・検査可能</h3>
                                         <div class="point03-text-bottom">
                                                 <?php
                                                 $schedule = [
@@ -113,14 +113,19 @@
                                 </div>
                         </div>
                         <div class="Information-left-induction">
-                                <span class="Information-left-induction-1">内視鏡検査についてはこちらから</span>
+                                <span class="Information-left-induction-1">内視鏡検査についてはこちらから
+                                        <svg width="26" height="26" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="50" cy="50" r="48" fill="white" stroke="#ffffff" stroke-width="1"/>
+                                                <path d="M40 35 L60 50 L40 65" stroke="#007FFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                        </svg>
+                                </span>
                         </div>
                 </a>
                 <div class="Information-right">
-                        <h2 class="Information-right-title">
+                        <h3 class="Information-right-title">
                                 <i class="fa-solid fa-volume-high"></i>
                                 お知らせ
-                        </h2>
+                        </h3>
                         <?php
                         $oshirase_query = new WP_Query(array(
                                 'post_type'      => 'post',
@@ -245,7 +250,7 @@
                                         <dt class="Access-left-text-1">休診日</dt>
                                         <dd class="Access-left-text-2">木曜、土曜午後、日曜、祝日<br>曜日によって、医師が変更になる事がありますので、詳しくは直接クリニックまでお問い合わせください。</dd>
                                         <dt class="Access-left-text-1">住所</dt>
-                                        <dd class="Access-left-text-2">〒308-0031 茨城県筑西市丙153-4</dd>
+                                        <dd class="Access-left-text-2"><address>〒308-0031 茨城県筑西市丙153-4</address></dd>
                                         <dt class="Access-left-text-1">駐車場</dt>
                                         <dd class="Access-left-text-2">15台</dd>
                                         <dt class="Access-left-text-1">アクセス</dt>
@@ -256,7 +261,12 @@
                                 <img src="<?php echo get_theme_file_uri('img/map.webp'); ?>" alt="map">
                         </div>
                 </div>
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="Access-bottom-btn">診療時間・アクセスはこちら</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="Access-bottom-btn">診療時間・アクセスはこちら
+                        <svg width="26" height="26" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="48" fill="white" stroke="#ffffff" stroke-width="1"/>
+                                <path d="M40 35 L60 50 L40 65" stroke="#007FFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                </a>
                 <div class="Access-bottom">
                         <p class="Access-bottom-text1"><img src="<?php echo get_theme_file_uri('img/sick.webp'); ?>" alt="sick-icon"> 発熱・風邪症状のある方へ</p>
                         <p class="Access-bottom-text2">発熱・風邪症状のある患者さんの診療・各種検査を行っております。<br>発熱外来は１５時からの予約制なので、必ず事前のお電話をお願いいたします。</p>
@@ -348,7 +358,12 @@
                                 <p class="Greeting-top-name">大圃クリニック 院長<br><span class="Greeting-top-name1">大圃 弘</span><br><span class="Greeting-top-name2">Ohata Hiroshi</span></p>
                         </div>
                 </div>
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="Greeting-bottom">医師紹介はこちら</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="Greeting-bottom">医師紹介はこちら
+                        <svg width="26" height="26" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="48" fill="white" stroke="#ffffff" stroke-width="1"/>
+                                <path d="M40 35 L60 50 L40 65" stroke="#007FFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                </a>
         </div>
 </section>
 <section class="Reasons">
@@ -367,7 +382,7 @@
                                         </div>
                                         <div class="Reasons-box2-2">
                                                 <p class="Reasons-box2-top">01</p>
-                                                <p class="Reasons-box2-middle">幅広い診療科を備えた<br>地域のかかりつけ医</p>
+                                                <h3 class="Reasons-box2-middle">幅広い診療科を備えた<br>地域のかかりつけ医</h3>
                                                 <p class="Reasons-box2-bottom">当院では、内科・外科・胃腸科・皮膚科・形成外科・理学療法の診療に対応しており、風邪や腹痛などの日常的な症状から外傷、皮膚のトラブル、手術後のリハビリまで、幅広い医療を提供しています。<br><br>ひとつのクリニック内で複数の診療科を受診できるため、症状によりどの診療科を受診すればいいか不安な患者さんでも安心してご来院いただける環境を整えております。</p>
                                         </div>
                                 </div>
@@ -380,7 +395,7 @@
                                         </div>
                                         <div class="Reasons-box4-2">
                                                 <p class="Reasons-box4-top">02</p>
-                                                <p class="Reasons-box4-middle">JR下館駅から徒歩約4分<br>通いやすい立地</p>
+                                                <h3 class="Reasons-box4-middle">JR下館駅から徒歩約4分<br>通いやすい立地</h3>
                                                 <p class="Reasons-box2-bottom">当院は、JR水戸線・真岡鐵道・関東鉄道常総線の下館駅から徒歩約4分の場所にありアクセスの良さが特長です。<br><br>また、無料駐車場（15台分）も完備しており、お車での通院にも便利です。<br>さらに土曜日も午前診療を行っているため、平日にお仕事やご予定のある方でも通院しやすい環境を整えています。</p>
                                         </div>
                                 </div>
@@ -393,7 +408,7 @@
                                         </div>
                                         <div class="Reasons-box2-2">
                                                 <p class="Reasons-box2-top">03</p>
-                                                <p class="Reasons-box2-middle">高度医療機関との連携による<br>診療の質の向上</p>
+                                                <h3 class="Reasons-box2-middle">高度医療機関との連携による<br>診療の質の向上</h3>
                                                 <p class="Reasons-box2-bottom">大圃クリニックでは、患者さんにより安心で質の高い診療を提供できるよう、茨城県西部メディカルセンター、協和中央病院、つくばメディカルセンター、自治医科大学をはじめ、NTT東日本関東病院など高度医療機関と技術交流や連携体制の構築を進めています。<br><br>必要に応じて検査技術や診療経験を共有することで、より専門的な視点を診療に反映し検査や治療の精度向上と、患者さんの状態に応じて迅速に専門医への紹介や適切な検査へつなげる体制を整えております。</p>
                                         </div>
                                 </div>
@@ -406,7 +421,7 @@
                                         </div>
                                         <div class="Reasons-box4-2">
                                                 <p class="Reasons-box4-top">04</p>
-                                                <p class="Reasons-box4-middle">1946年開院<br>地域に根ざした医療の提供</p>
+                                                <h3 class="Reasons-box4-middle">1946年開院<br>地域に根ざした医療の提供</h3>
                                                 <p class="Reasons-box2-bottom">大圃クリニックは、創設以来70年以上にわたり、筑西市の地域医療を支えてきました。<br><br>時代の変化に合わせて診療内容や体制を進化させながらも、地域に寄り添うという原点を変えずに医療を提供し続けています。<br><br>ご家族ぐるみで通ってくださる方や、何世代にもわたって受診される患者様も多く、長年にわたり信頼を育んできたクリニックとして、これからも地域に根ざした医療を続けてまいります。</p>
                                         </div>
                                 </div>
@@ -419,15 +434,25 @@
                                         </div>
                                         <div class="Reasons-box2-2">
                                                 <p class="Reasons-box2-top">05</p>
-                                                <p class="Reasons-box2-middle">わかりやすく、納得できる<br>医療の提供</p>
+                                                <h3 class="Reasons-box2-middle">わかりやすく、納得できる<br>医療の提供</h3>
                                                 <p class="Reasons-box2-bottom">当院では、患者様一人ひとりが安心して診療を受けられるよう症状や検査内容について、専門用語を避けたやさしい言葉での説明を心がけています。<br>検査や処方の意図をきちんと理解いただいたうえで治療を進めることが、信頼関係を築く第一歩だと考えています。<br>わからないことがあればその場で質問できる雰囲気を大切にし、不安や疑問を残さない丁寧な対応をスタッフ一同で取り組んでいます。</p>
                                         </div>
                                 </div>
                         </div>
                 </div>
                 <div class="Reasons-btn">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="Reasons-bottom">クリニック紹介はこちら</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="Reasons-bottom"><i class="Reasons-mark">🔰</i>初めてご来院される方へ</a>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="Reasons-bottom">クリニック紹介はこちら　
+                                <svg width="26" height="26" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" r="48" fill="white" stroke="#ffffff" stroke-width="1"/>
+                                    <path d="M40 35 L60 50 L40 65" stroke="#007FFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                        </a>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="Reasons-bottom"><i class="Reasons-mark">🔰</i>初めてご来院される方へ　
+                                <svg width="26" height="26" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" r="48" fill="white" stroke="#ffffff" stroke-width="1"/>
+                                    <path d="M40 35 L60 50 L40 65" stroke="#007FFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                        </a>
                 </div>
         </div>
         <div class="oval-1"></div>
