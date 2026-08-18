@@ -370,7 +370,7 @@
         <div class="oval-4"></div>
         <div class="Reasons-container">
                 <div class="top-title">
-                        <h2 class="Greeting-title-1">当院の内視鏡検査が選ばれる理由</h2>
+                        <h2 class="Greeting-title-1">当院の内視鏡検査が<br class="sp-br">選ばれる理由</h2>
                         <p class="Greeting-title-2">Reasons</p>
                 </div>
                 <div class="Reasons-box">

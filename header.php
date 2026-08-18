@@ -52,8 +52,8 @@
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">医師紹介</a></li>
                         <li class="header__nav-item header__nav-item--dropdown">
                             <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle-checkbox">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="dropdown-link-pc">診療内容一覧 <span>∨</span></a>
-                            <label for="dropdown-toggle" class="dropdown-link-sp">診療内容一覧 <span>∨</span></label>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="dropdown-link-pc">診療内容一覧 <span class="dropdown-arrow">∨</span></a>
+                            <label for="dropdown-toggle" class="dropdown-link-sp">診療内容一覧 <span class="dropdown-arrow">∨</span></label>
                             <ul class="header-dropdown">
                                 <li class="header-dropdown-item">
                                     <a href="<?php echo esc_url(home_url('/')); ?>">
