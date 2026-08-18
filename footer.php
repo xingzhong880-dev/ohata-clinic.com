@@ -80,7 +80,7 @@
                                                 <path d="M40 35 L60 50 L40 65" stroke="#86898B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                             </svg>    
                                         睡眠時無呼吸</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　CPAP</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>CPAP</a>
                                     </li>
                                     <li class="footer-dropdown-item">
                                         <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -88,7 +88,7 @@
                                                 <path d="M40 35 L60 50 L40 65" stroke="#86898B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                             </svg>
                                         呼吸器内科</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　喘息・小児喘息</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>喘息・小児喘息</a>
                                     </li>
                                     <li class="footer-dropdown-item">
                                         <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -112,9 +112,9 @@
                                                 <path d="M40 35 L60 50 L40 65" stroke="#86898B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                             </svg>    
                                         内視鏡検査</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　胃内視鏡検査（胃カメラ）</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　大腸内視鏡検査（大腸カメラ）</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　ポリープ切除</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>胃内視鏡検査（胃カメラ）</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>大腸内視鏡検査（大腸カメラ）</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>ポリープ切除</a>
                                     </li>
                                     <li class="footer-dropdown-item">
                                         <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -158,7 +158,7 @@
                                                 <path d="M40 35 L60 50 L40 65" stroke="#86898B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                             </svg>    
                                         睡眠時無呼吸</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　CPAP</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>CPAP</a>
                                     </li>
                                     <li class="footer-dropdown-item">
                                         <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -166,7 +166,7 @@
                                                 <path d="M40 35 L60 50 L40 65" stroke="#86898B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                             </svg>
                                         呼吸器内科</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　喘息・小児喘息</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>喘息・小児喘息</a>
                                     </li>
                                     <li class="footer-dropdown-item">
                                         <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -190,9 +190,9 @@
                                                 <path d="M40 35 L60 50 L40 65" stroke="#86898B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                             </svg>    
                                         内視鏡検査</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　胃内視鏡検査（胃カメラ）</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　大腸内視鏡検査（大腸カメラ）</a>
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">　<span>●</span>　ポリープ切除</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>胃内視鏡検査（胃カメラ）</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>大腸内視鏡検査（大腸カメラ）</a>
+                                        <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-dropdown-item2"><span>●</span>ポリープ切除</a>
                                     </li>
                                     <li class="footer-dropdown-item">
                                         <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -231,10 +231,10 @@
                     </nav>
                 </div>
                 <div class="footer-precautions2">
-                        <a href="<?php echo esc_url(home_url('/')); ?>">医療DX推進のための取り組み</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>">医療広告ガイドライン遵守について</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>">プライバシーポリシー</a>
-                    </div>
+                    <a href="<?php echo esc_url(home_url('/')); ?>">医療DX推進のための取り組み</a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>">医療広告ガイドライン遵守について</a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>">プライバシーポリシー</a>
+                </div>
             </div>
             <div class="footer-container-2">
                 <dl class="footer-container-2-text">
@@ -252,6 +252,25 @@
             <p class="footer-bottom">© 2025 大圃クリニック.</p>
         </div>
     </footer>
+
+    <div class="floating-btns">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="floating-btn floating-btn-contact">
+            <p class="floating-btns-text1">お気軽にお問い合わせください</p>
+            <address class="floating-btns-address-telephone"><i class="fa-solid fa-phone"></i> 0296-21-0123</address>
+            <p class="floating-btns-text1-1"><i class="fa-solid fa-shoe-prints"></i>下館駅徒歩4分 | <i class="fa-solid fa-car"></i>駐車場完備 | <i class="fa-regular fa-calendar-check"></i>土曜日も診療</p>
+            <div class="floating-btns-bottom">
+                <p><span>午前</span>9:00-12:30</p>
+                <p><span>午後</span>14:30-18:00</p>
+                <p><span>休診日</span>木、土曜午後、日、祝</p>
+            </div>
+        </a>
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="floating-btn floating-btn-reserve">
+            <p class="floating-btns-text2">24時間 WEB予約受付中</p>
+            <p class="floating-btns-appointment"><i class="fa-solid fa-calendar-check"></i>WEB予約</p>
+            <p class="floating-btns-appointment-text"><i class="fa-solid fa-clock"></i>内視鏡検査予約 | <i class="fa-solid fa-stethoscope"></i>初診・再診予約</p>
+        </a>
+        <button type="button" class="floating-btn-totop" aria-label="ページトップへ戻る"><p class="floating-btn-totop-text">↑</p><p class="floating-btn-totop-text2">Page Top</p></button>
+    </div>
 
     <?php wp_footer(); ?>
 </body>

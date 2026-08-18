@@ -323,6 +323,9 @@ header.is-scrolled .top-address {
   border-radius: 30px;
   white-space: nowrap;
 }
+.header__nav-item2:hover {
+    opacity: 0.8;
+}
 .header__nav-item:not(.header__nav-item2) a {
   color: inherit;
   text-decoration: none;
@@ -368,6 +371,13 @@ header dropdown（診療内容一覧）
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
+}
+.dropdown-arrow{
+  display: inline-block;
+}
+.header__nav-item--dropdown:hover .dropdown-link-pc .dropdown-arrow,
+.header__nav-item--dropdown:focus-within .dropdown-link-pc .dropdown-arrow{
+  transform: rotate(180deg);
 }
 .dropdown-toggle-checkbox{
     position: absolute;
@@ -444,7 +454,6 @@ header dropdown（診療内容一覧）
     .top-address {
         display: none;
     }
-
     .header_logo img {
         margin: 10px;
         height: 32px; 
@@ -452,6 +461,13 @@ header dropdown（診療内容一覧）
     .header__inner{
         height: 56px;
         margin: 0;
+    }
+    .header__nav-item a:hover {
+        color: #484848;
+        opacity: 0.8;
+    }
+    .header-dropdown::before {
+        display: none;
     }
 }
 
@@ -483,15 +499,18 @@ header dropdown（診療内容一覧）
         z-index: 1100;
         cursor: pointer;
         padding: 0;
+        gap: 3px;
     }
 
     .hamburger-line {
         display: block;
         width: 26px;
         height: 1px;
-        background: #fff;
-        margin: 3px 0;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        min-height: 1px;
+    flex-shrink: 0;
+    background-color: #fff;
+    margin: 2px 0;
+    transform: translateZ(0);
     }
 
     .hamburger-text {
@@ -595,30 +614,18 @@ header dropdown（診療内容一覧）
     .dropdown-link-sp{
         display: flex;
         align-items: center;
+        width: 100%;
+        box-sizing: border-box;
         font-size: 18px;
         font-weight: bold;
         padding: 15px 8px;
         cursor: pointer;
+        position: relative;
+        z-index: 10;
+        gap: 10px;
     }
-    .header-dropdown{
-        position: static;
-        transform: none;
-        width: auto;
-        max-width: none;
-        margin: 0;
-        padding: 0 10px;
-        box-shadow: none;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: stretch;
-        display: none;
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
-    .dropdown-toggle-checkbox:checked ~ .header-dropdown{
-        display: grid;
-        margin: 0 0 10px;
-        padding: 10px;
+    .header__nav-item--dropdown.is-open .dropdown-link-sp .dropdown-arrow{
+        transform: rotate(180deg);
     }
 
     .header-dropdown-item{
@@ -1031,9 +1038,6 @@ Information
   padding: 50px 20px;
   transition: opacity 0.3s;
 }
-.Information-container:hover {
-    opacity: 0.8;
-}
 .Information-left {
     position: relative;
     width: 320px;
@@ -1041,6 +1045,9 @@ Information
     box-sizing: border-box;
     display: block;
     cursor: pointer;
+}
+.Information-left:hover {
+    opacity: 0.8;
 }
 .Information-left-img img {
     width: 100%;
@@ -1221,7 +1228,6 @@ Information
         padding: 30px 10px;
     }
     .Information-left {
-        width: 100%;
         max-width: 320px;
     }
 }
@@ -1431,6 +1437,9 @@ Access
 }
 
 @media screen and (max-width:1000px){
+    .Access-title-1{
+        font-size: 28px;
+    }
     .mark_v2-symbol-group {
         flex-direction: column;
         gap: 0;
@@ -1544,6 +1553,9 @@ Medical-menu
 }
 
 @media screen and (max-width: 1000px) {
+    .Medical-menu-title-1{
+        font-size: 28px;
+    }
     .Medical-menu-list1 {
         grid-template-columns: repeat(2, 1fr);
         padding: 0 5vw;
@@ -1577,11 +1589,7 @@ Medical-menu
         font-size: 12px;
     }
 }
-
 @media screen and (max-width: 770px) {
-    .Medical-menu-title-1{
-        font-size: 28px;
-    }
     .Medical-menu-list1 {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 5vw;
@@ -1605,6 +1613,9 @@ Greeting
 .Greeting-title-1{
     font-size: 40px;
     font-weight: bolder;
+}
+.sp-br{
+    display: none;
 }
 .Greeting-title-2{
     font-size: 24px;
@@ -1663,6 +1674,15 @@ Greeting
     opacity: 0.8;
 }
 
+@media screen and (max-width: 1000px) {
+    .Greeting-title-1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .Greeting-title-2{
+        text-align: center;
+    }
+}
 @media screen and (max-width: 770px) {
     .Greeting-container{
         padding: 50px 20px;
@@ -1671,12 +1691,8 @@ Greeting
         flex-direction: column-reverse;
         gap:40px;
     }
-    .Greeting-title-1{
-        font-size: 28px;
-        text-align: center;
-    }
-    .Greeting-title-2{
-        text-align: center;
+    .sp-br{
+        display: inline;
     }
     .Greeting-top-img{
         margin: 0 auto;
@@ -2187,6 +2203,9 @@ footer {
     flex-direction: column;
     line-height: 25px;
 }
+.footer-precautions a:hover {
+    opacity: 0.8;
+}
 .footer-precautions2{
     display: none;
 }
@@ -2197,7 +2216,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    line-height: 40px;
+    line-height: 30px;
     white-space: nowrap;
 }
 .footer__nav-item{
@@ -2217,15 +2236,15 @@ footer {
     flex-shrink: 0;
     margin-left: 8px;
 }
+.footer__nav-item a:hover {
+    opacity: 0.8;
+}
 .footer__nav-item-dropdown{
     display: flex;
     flex-direction: row;
     font-size: 12px;
-    line-height: 35px;
+
     gap: 90px;
-}
-.footer-dropdown-item{
-    line-height: 35px;
 }
 .footer-dropdown-item a{
     display: flex;
@@ -2234,6 +2253,12 @@ footer {
 }
 .footer-dropdown-item svg{
     flex-shrink: 0; 
+}
+.footer-dropdown-item a:hover {
+    opacity: 0.8;
+}
+.footer-dropdown-item2{
+    margin-left:15px;
 }
 .footer-dropdown-item span{
     font-size: 5px;
@@ -2273,6 +2298,9 @@ footer {
 .footer-container-2-label-2 a{
     text-decoration: underline;
 }
+.footer-container-2-label-2 a:hover {
+    opacity: 0.8;
+}
 
 .footer-bottom{
     text-align: center;
@@ -2289,6 +2317,15 @@ footer {
     }
 }
 @media screen and (max-width: 770px){
+    .footer__inner{
+        padding: 5px 20px 80px 20px;
+    }
+    .footer_logo{
+        text-align: center;
+    }
+    .footer_logo img{
+        height: 47px;
+    }
     .footer-container{
         gap: 20px;
     }
@@ -2302,16 +2339,24 @@ footer {
     .footer__nav{
         display: block;
     }
+    .footer-dropdown-item2{
+        line-height: 1.3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
     .footer__nav-item-dropdown{
         justify-content: space-between;
-        gap: 10vw;
+        gap: 4vw;
         white-space: normal;
+        box-sizing: border-box;
     }
     .footer-dropdown-left{
-        width: 50%;
+        width: calc(50% - 2vw);
+        box-sizing: border-box;
     }
     .footer-dropdown-right{
-        width: 50%;
+        width: calc(50% - 2vw);
+        box-sizing: border-box;
     }
     .footer-container-2-text {
         grid-template-columns: 1fr;
@@ -2329,9 +2374,250 @@ footer {
         font-size: 10px;
         text-decoration: underline;
         display: flex;
+        flex-direction: column;
         line-height: 25px;
-        gap: 10px;
     }
+    .footer-precautions2 a:hover {
+        opacity: 0.8;
+    }
+}
+
+/* ----------------------------------------
+追従ボタン
+---------------------------------------- */
+.floating-btns {
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.floating-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  height: 85px;
+  border-radius: 20px 20px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  text-align: center;
+}
+.floating-btn:hover {
+  opacity: 0.8;
+}
+
+.floating-btn-contact {
+  background-color: #F38200;
+  position: relative;
+  padding-top: 10px;
+}
+.floating-btns-text1{
+    background-color: #FFEE9B;
+    color: #603300;
+    padding: 3px 30px;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 1;
+    margin: 0;
+}
+.floating-btns-address-telephone{
+    color: white;
+    font-size: 28px;
+    font-family: "Zain", sans-serif;
+    padding-top: 3px;
+}
+.floating-btns-address-telephone .fa-solid{
+    color: white;
+    font-size: 20px;
+}
+.floating-btns-text1-1{
+    color: white;
+    font-size: 10px;
+    padding-bottom: 3px;
+}
+.floating-btns-text1-1 .fa-solid,.fa-regular{
+    color: white;
+    opacity: 0.8;
+    font-size: 10px;
+    padding-right: 3px;
+}
+.fa-shoe-prints{
+    transform: rotate(-90deg);
+    position: relative;
+    top: -2px;
+}
+.floating-btns-bottom{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    background-color: #FFB764;
+    padding: 5px 3px;
+    gap: 3px;
+}
+.floating-btns-bottom p{
+    font-weight: bold;
+}
+.floating-btns-bottom span{
+    color: white;
+    padding: 1px 4px;
+    background-color: #F38200;
+    border-radius: 15px;
+    margin-right: 2px;
+}
+
+.floating-btn-reserve {
+  background-color: #4191c7;
+  position: relative;
+  padding-top: 10px;
+}
+.floating-btns-text2{
+    background-color: #b0ebff;
+    color: #603300;
+    padding: 3px 30px;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 1;
+    margin: 0;
+}
+.floating-btns-appointment{
+    color: white;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.floating-btns-appointment .fa-calendar-check{
+    color: white;
+    font-size: 18px;
+    padding-right: 5px;
+}
+.floating-btns-appointment-text{
+    color: white;
+    font-size: 10px;
+    padding: 0 20px 10px 20px;
+}
+.floating-btns-appointment-text .fa-solid{
+    color: white;
+    font-size: 10px;
+    padding-right: 3px;
+}
+
+.floating-btn-totop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #DCEEFF;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  font-family: "Zain", sans-serif;
+}
+.floating-btn-totop-text{
+    font-family: "Zain", sans-serif;
+    color: #659CD2;
+    font-size: 25px;
+    font-weight: 400;
+}
+.floating-btn-totop-text2{
+    color: #659CD2;
+    font-size: 10px;
+}
+.floating-btn-totop:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width:770px) {
+  .floating-btns {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .floating-btn{
+    height: 60px;
+  }
+  .floating-btn-contact {
+    width: 55%;
+    margin-left: 5px;
+  }
+  .floating-btn-reserve {
+    width: 45%;
+    margin-right: 5px;
+  }
+
+  .floating-btns-text1 {
+    display: none;
+  }
+
+  .floating-btns-text1-1 {
+    background-color: #FFEE9B;
+    color: #603300;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 9px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    max-width: 90%;
+    line-height: 1.4;
+    z-index: 1;
+    margin: 0;
+    opacity: 1;
+  }
+  .floating-btns-text1-1 .fa-solid,
+  .floating-btns-text1-1 .fa-regular {
+    color: #603300;
+    opacity: 1;
+  }
+
+  .floating-btns-bottom {
+    display: none;
+  }
+
+  .floating-btns-appointment-text {
+    display: none;
+  }
+
+  .floating-btn-totop {
+    position: absolute;
+    top: -70px;
+    right: 10px;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 0;
+  }
+    .floating-btn-totop-text{
+        font-size: 23px;
+    }
+    .floating-btn-totop-text2{
+        font-size: 9px;
+    }
+
 }
 
 /* ----------------------------------------

@@ -1,35 +1,30 @@
 /* ----------------------------------------
 smooth scroll
 ---------------------------------------- */
-// #で始まるリンクを取得
 const jsSmoothScroll = document.querySelectorAll('a[href^="#"]');
-
-// forで回してaddEventListenerする
+ 
 for (let i = 0; i < jsSmoothScroll.length; i++){
   jsSmoothScroll[i].addEventListener('click', (e) => {
     e.preventDefault();
-    // href属性の取得
     let href = jsSmoothScroll[i].getAttribute('href');
     let target = document.getElementById(href.replace('#', ''));
     const rect = target.getBoundingClientRect().top;
     const offset = window.pageYOffset -0;
-    // 移動先のポジション取得
     const position = rect + offset;
-    // window.scrollToでスクロール
     window.scrollTo({
       top: position,
       behavior: 'smooth',
     });
   });
 }
-
+ 
 /* ----------------------------------------
 header
 ---------------------------------------- */
 (function () {
     const header = document.querySelector('header');
     if (!header) return;
-
+ 
     function updateHeaderState() {
         if (window.scrollY > 0) {
             header.classList.add('is-scrolled');
@@ -37,12 +32,12 @@ header
             header.classList.remove('is-scrolled');
         }
     }
-
+ 
     updateHeaderState();
-
+ 
     window.addEventListener('scroll', updateHeaderState, { passive: true });
 })();
-
+ 
 /* ----------------------------------------
 ハンバーガーアイコン
 ---------------------------------------- */
@@ -52,26 +47,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.querySelector('.nav-overlay');
     const body = document.body;
     const dropdownCheckbox = document.getElementById('dropdown-toggle');
-
+    const dropdownItem = document.querySelector('.header__nav-item--dropdown');
+    const dropdownLabel = document.querySelector('.dropdown-link-sp');
+ 
     if (!hamburger || !nav) return;
-
+ 
+    function closeDropdown() {
+        if (dropdownItem) dropdownItem.classList.remove('is-open');
+        if (dropdownCheckbox) dropdownCheckbox.checked = false;
+    }
+ 
     function toggleMenu() {
         const isOpen = hamburger.classList.toggle('is-open');
         nav.classList.toggle('is-open', isOpen);
         if (overlay) overlay.classList.toggle('is-open', isOpen);
         body.classList.toggle('is-menu-open', isOpen);
         hamburger.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
-        if (!isOpen && dropdownCheckbox) {
-            dropdownCheckbox.checked = false;
+        if (!isOpen) {
+            closeDropdown();
         }
     }
-
+ 
+    if (dropdownItem && dropdownLabel) {
+        dropdownLabel.addEventListener('click', function (e) {
+            e.preventDefault();
+            const isOpen = dropdownItem.classList.toggle('is-open');
+            if (dropdownCheckbox) dropdownCheckbox.checked = isOpen;
+        });
+    }
+ 
     hamburger.addEventListener('click', toggleMenu);
-
+ 
     if (overlay) {
         overlay.addEventListener('click', toggleMenu);
     }
-
+ 
     nav.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             if (hamburger.classList.contains('is-open')) {
@@ -80,7 +90,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
+ 
+/* ----------------------------------------
+追従ボタン
+---------------------------------------- */
+(function () {
+    const toTopBtn = document.querySelector('.floating-btn-totop');
+    if (!toTopBtn) return;
+ 
+    toTopBtn.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    });
+})();
+ 
 /* ----------------------------------------
 FAQ
 ---------------------------------------- */
