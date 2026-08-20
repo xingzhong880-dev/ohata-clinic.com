@@ -2678,6 +2678,67 @@ breadcrumbs
 /* ----------------------------------------
 page title
 ---------------------------------------- */
+.page-common-head {
+    width: 100%;
+    background-color: #FFF7E2;
+    padding: 70px 20px;
+    position: relative; 
+}
+
+.page-common-head__inner {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.page-common-head__title {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+.page-common-head__image {
+    position: absolute;
+    right: 5%;
+    bottom: -25px; 
+    width: 180px; 
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.page-common-content {
+    width: 100%;
+}
+
+.page-common-content__inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.inner860 {
+    max-width: 860px;
+    margin: 0 auto;
+}
+@media (max-width: 900px){
+    .page-common-content__inner {
+        padding: 30px 10px;
+    }
+}
+@media (max-width: 770px) {
+    .page-common-head__title {
+        font-size: 28px;
+    }
+    .page-common-head__image {
+        width: 130px;
+        bottom: -20px;
+        right: 5%;
+    }
+}
+
+
 /* ----------------------------------------
 message mv
 ---------------------------------------- */

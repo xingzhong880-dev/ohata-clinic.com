@@ -98,7 +98,7 @@
 </section>
 <section class="Information">
         <div class="Information-container">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="Information-left">
+                <a href="/endoscope" class="Information-left">
                         <div class="Information-left-img">
                                 <img src="<?php echo get_theme_file_uri('img/doctor-1.webp'); ?>" alt="doctor">
                         </div>
