@@ -28,6 +28,7 @@ function my_script_init()
   wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css', array(), '5.8.2', 'all');
   wp_enqueue_style('destyle', get_template_directory_uri() . '/css/destyle.css', array(), '1.0.0', 'all');
   wp_enqueue_style('my', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
+  wp_enqueue_style('block-css', get_template_directory_uri() . '/css/block.css', array(), '1.0.0', 'all'); // 
 
   wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous' , array(), '1.0.0', true);
   wp_enqueue_script('my', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
@@ -133,8 +134,9 @@ add_action('bcn_after_fill', 'my_static_breadcrumb_adder');
 add_action('after_setup_theme', 'block_editor_css');
 function block_editor_css() {
 	add_theme_support('editor-styles');
-	add_editor_style('css/style.css'); //サイトオリジナル
-	add_editor_style('editor-style.css'); //エディタ専用
+	add_editor_style('css/style.css');
+	add_editor_style('editor-style.css');
+  add_editor_style('css/block.css');
 }
 
 //----------------------------------------------------
@@ -325,3 +327,26 @@ function json_breadcrumb() {
 }
  
 add_action( 'wp_head', 'json_breadcrumb' );
+
+//----------------------------------------------------
+// テンプレート
+//----------------------------------------------------
+function my_theme_enqueue_block_css() {
+	wp_enqueue_style(
+		'block-style',
+		get_theme_file_uri( 'css/block.css' ),
+		array(),
+		filemtime( get_theme_file_path( 'css/block.css' ) )
+	);
+}
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_block_css' );
+
+
+add_filter( 'render_block', function ( $block_content, $block ) {
+    if ( 'genesis-custom-blocks/th-text' === $block['blockName'] ) {
+        remove_filter( 'the_content', 'wpautop' );
+    } elseif ( ! has_filter( 'the_content', 'wpautop' ) ) {
+        add_filter( 'the_content', 'wpautop' );
+    }
+    return $block_content;
+}, 10, 2 );

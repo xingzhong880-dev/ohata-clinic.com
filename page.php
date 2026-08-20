@@ -19,4 +19,18 @@
             get_template_part('page/'.$slug);
         }
     ?>
+
+<section class="page-common-head">
+    <div class="page-common-head__inner inner860">
+        <h1 class="page-common-head__title"><?php the_title(); ?></h1>
+    </div>
+    <img class="page-common-head__image" src="<?php echo get_template_directory_uri(); ?>/img/Group 518.webp" alt="">
+</section>
+
+<section class="page-common-content page-common-content-template">
+    <div class="page-common-content__inner inner860">
+        <?php the_content(); ?>
+    </div>
+</section>
+
 <?php get_footer(); ?>
