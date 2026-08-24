@@ -1,3 +1,10 @@
+<?php
+$tag = block_value( 'strengths-title-tag' );
+if ( ! $tag ) {
+    $tag = 'p';
+}
+$tag = esc_attr( $tag );
+?>
 <div class="strengths-box">
     <div class="strengths-box1">
         <div class="strengths-box-top">
@@ -18,7 +25,7 @@
         </div>
 
         <div class="strengths-box-bottom">
-            <p class="strengths-box-title"><?php echo esc_html(block_value('strengths-title')); ?></p>
+            <<?php echo $tag; ?> class="strengths-box-title"><?php echo esc_html(block_value('strengths-title')); ?></<?php echo $tag; ?>>
             <div class="strengths-box-bottom2">
                 <?php echo wpautop(wp_kses_post(block_value('strengths-text'))); ?>
             </div>
