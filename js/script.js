@@ -123,3 +123,39 @@ document.querySelectorAll('.FAQ-question').forEach(function(question) {
         }
     });
 });
+
+/* ----------------------------------------
+FAQ (block-faq.php用)
+---------------------------------------- */
+document.querySelectorAll('.faq-question').forEach(function(question) {
+    question.addEventListener('click', function() {
+        const item = this.closest('.faq-item');
+        const icon = this.querySelector('.faq-icon');
+
+        item.classList.toggle('active');
+
+        if (item.classList.contains('active')) {
+            icon.textContent = 'ー';
+        } else {
+            icon.textContent = '＋';
+        }
+    });
+});
+
+/* ----------------------------------------
+トグル
+---------------------------------------- */
+document.querySelectorAll('.toggle-title').forEach(function(question) {
+    question.addEventListener('click', function() {
+        const item = this.closest('.toggle-item');
+        const icon = this.querySelector('.toggle-icon');
+
+        item.classList.toggle('active');
+
+        if (item.classList.contains('active')) {
+            icon.textContent = 'ー';
+        } else {
+            icon.textContent = '＋';
+        }
+    });
+});
