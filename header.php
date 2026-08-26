@@ -56,7 +56,7 @@
                             <label for="dropdown-toggle" class="dropdown-link-sp">診療内容一覧 <span class="dropdown-arrow">∨</span></label>
                             <ul class="header-dropdown">
                                 <li class="header-dropdown-item">
-                                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                                    <a href="<?php echo esc_url(home_url('/internal-medicine')); ?>">
                                         <div class="Medical-menu-circle-top">
                                             <img src="<?php echo get_theme_file_uri('img/Rectangle1.webp'); ?>" alt="内科">
                                         </div>
