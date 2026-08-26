@@ -159,3 +159,23 @@ document.querySelectorAll('.toggle-title').forEach(function(question) {
         }
     });
 });
+
+/* ----------------------------------------
+監修者トグル
+---------------------------------------- */
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.supervisor-toggle-title').forEach(function(question) {
+        question.addEventListener('click', function() {
+            const item = this.closest('.supervisor-toggle-item');
+            const icon = this.querySelector('.supervisor-toggle-icon');
+
+            item.classList.toggle('active');
+
+            if (item.classList.contains('active')) {
+                icon.textContent = 'ー';
+            } else {
+                icon.textContent = '＋';
+            }
+        });
+    });
+});
