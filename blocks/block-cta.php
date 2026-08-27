@@ -19,7 +19,7 @@ $tag = esc_attr($tag);
                     $img_url = wp_get_attachment_image_url($img_id, 'large');
                     if ($img_url) :
                 ?>
-                        <img class="cta-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('cta-title')); ?>">
+                        <img width="270px" height="270px" class="cta-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('cta-title')); ?>" loading=”lazy”>
                 <?php endif;
                 endif; ?>
             </div>

@@ -6,7 +6,7 @@
         <div class="introduction">
 
                 <div class="title">
-                        <img src="<?php echo get_theme_file_uri('img/clinic-img.webp'); ?>" alt="logo">
+                        <img width="968px" height="686px" src="<?php echo get_theme_file_uri('img/clinic-img.webp'); ?>" alt="logo">
                         <div class="title-list">
                                 <ul class="title-list-container">
                                         <li class="title-list-1">内視鏡検査</li>
@@ -28,7 +28,7 @@
                                         <p class="point-text">POINT<span class="point-number">01</span></p>
                                 </div>
                                 <div class="point01-text">
-                                        <h3 class="point-text-1">皆様のかかりつけ医として<br><span class="point-text-1-1">各診療科目に認定医が在中</span></h3>
+                                        <p class="point-text-1">皆様のかかりつけ医として<br><span class="point-text-1-1">各診療科目に認定医が在中</span></p>
                                         <p class="point-text-2">※日本消化器外科学会 認定医,日本外科学会 認定医,日本医師会 認定産業医,日本医師会 認定健康スポーツ医 大圃 弘<br>※日本外科学会 外科認定医,日本外科学会 認定登録医,日本医師会 認定産業医 大関 美穂<br>※日本内科学会 認定内科医 大圃 研,根岸 良充,伊藤 洋平</p>
                                 </div>
                         </div>
@@ -37,7 +37,7 @@
                                         <p class="point-text">POINT<span class="point-number">02</span></p>
                                 </div>
                                 <div class="point02-title">
-                                        <h3 class="point-text-1"><span class="point-text-1-1">駅チカ・駐車場20台完備</span><br>で通院も安心</h3>
+                                        <p class="point-text-1"><span class="point-text-1-1">駅チカ・駐車場20台完備</span><br>で通院も安心</p>
                                         <p class="point-text-3">下館駅から徒歩4分。クリニック前には15台分の駐車スペースもご用意しています。</p>
                                 </div>
                         </div>
@@ -46,7 +46,7 @@
                                         <p class="point-text">POINT<span class="point-number">03</span></p>
                                 </div>
                                 <div class="point03-text">
-                                        <h3 class="point-text-1"><span class="point-text-1-1">土曜日</span>、診療・検査可能</h3>
+                                        <p class="point-text-1"><span class="point-text-1-1">土曜日</span>、診療・検査可能</p>
                                         <div class="point03-text-bottom">
                                                 <?php
                                                 $schedule = [
@@ -100,7 +100,7 @@
         <div class="Information-container">
                 <a href="/endoscope" class="Information-left">
                         <div class="Information-left-img">
-                                <img src="<?php echo get_theme_file_uri('img/doctor-1.webp'); ?>" alt="doctor">
+                                <img width="320px" height="357px" src="<?php echo get_theme_file_uri('img/doctor-1.webp'); ?>" alt="doctor">
                         </div>
                         <div class="Information-left-text">
                                 <div class="Information-left-text-container">
@@ -122,10 +122,10 @@
                         </div>
                 </a>
                 <div class="Information-right">
-                        <h3 class="Information-right-title">
+                        <h2 class="Information-right-title">
                                 <i class="fa-solid fa-volume-high"></i>
                                 お知らせ
-                        </h3>
+                        </h2>
                         <?php
                         $oshirase_query = new WP_Query(array(
                                 'post_type'      => 'post',
@@ -258,7 +258,7 @@
                                 </dl>
                         </div>
                         <div class="Access-right">
-                                <img src="<?php echo get_theme_file_uri('img/map.webp'); ?>" alt="map">
+                                <img width="486px" height="364px" src="<?php echo get_theme_file_uri('img/map.webp'); ?>" alt="map">
                         </div>
                 </div>
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="Access-bottom-btn">診療時間・アクセスはこちら
@@ -268,7 +268,7 @@
                         </svg>
                 </a>
                 <div class="Access-bottom">
-                        <p class="Access-bottom-text1"><img src="<?php echo get_theme_file_uri('img/sick.webp'); ?>" alt="sick-icon"> 発熱・風邪症状のある方へ</p>
+                        <p class="Access-bottom-text1"><img width="36px" height="36px" src="<?php echo get_theme_file_uri('img/sick.webp'); ?>" alt="sick-icon"> 発熱・風邪症状のある方へ</p>
                         <p class="Access-bottom-text2">発熱・風邪症状のある患者さんの診療・各種検査を行っております。<br>発熱外来は１５時からの予約制なので、必ず事前のお電話をお願いいたします。</p>
                 </div>
         </div>
@@ -282,9 +282,9 @@
                 </div>
                 <div class="Medical-menu-list">
                         <ul class="Medical-menu-list1">
-                                <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
+                                <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/internal-medicine/')); ?>">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle1.webp'); ?>" alt="内科">
+                                                <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle1.webp'); ?>" alt="内科" loading=”lazy”>
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">内科</h3>
@@ -293,7 +293,7 @@
                                 </a></li>
                                 <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle2.webp'); ?>" alt="睡眠時無呼吸症候群">
+                                                <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle2.webp'); ?>" alt="睡眠時無呼吸症候群" loading=”lazy”>
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">睡眠時無呼吸症候群</h3>
@@ -302,7 +302,7 @@
                                 </a></li>
                                 <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle3.webp'); ?>" alt="CPAP治療">
+                                                <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle3.webp'); ?>" alt="CPAP治療" loading=”lazy”>
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">CPAP治療</h3>
@@ -311,7 +311,7 @@
                                 </a></li>
                                 <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle4.webp'); ?>" alt="呼吸器内科">
+                                                <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle4.webp'); ?>" alt="呼吸器内科" loading=”lazy”>
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">呼吸器内科</h3>
@@ -320,7 +320,7 @@
                                 </a></li>
                                 <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle5.webp'); ?>" alt="生活習慣病">
+                                                <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle5.webp'); ?>" alt="生活習慣病" loading=”lazy”>
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">生活習慣病</h3>
@@ -329,7 +329,7 @@
                                 </a></li>
                                 <li class="Medical-menu-list1-1"><a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle">
-                                                <img src="<?php echo get_theme_file_uri('img/Rectangle6.webp'); ?>" alt="形成外科">
+                                                <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle6.webp'); ?>" alt="形成外科" loading=”lazy”>
                                         </div>
                                         <div class="Medical-menu-text">
                                                 <h3 class="Medical-menu-text-title">形成外科</h3>
@@ -354,7 +354,7 @@
                                 特に、近年力を入れている内視鏡診療は、「早期発見・早期治療」において非常に重要な取組の一つです。<br><br>
                                 クリニックであっても、高度な診断力と温かい対応を両立する。<br>それが、私たちが目指す「地域のかかりつけ医」のあり方です。これからも変わらぬ姿勢で、皆様にとって頼れる医療機関であり続けたいと考えております。</p>
                         <div class="Greeting-top-img">
-                                <img src="<?php echo get_theme_file_uri('img/Frame.webp'); ?>" alt="大圃クリニック院長">
+                                <img width="320px" height="360px" src="<?php echo get_theme_file_uri('img/Frame.webp'); ?>" alt="大圃クリニック院長" loading=”lazy”>
                                 <p class="Greeting-top-name">大圃クリニック 院長<br><span class="Greeting-top-name1">大圃 弘</span><br><span class="Greeting-top-name2">Ohata Hiroshi</span></p>
                         </div>
                 </div>
@@ -378,7 +378,7 @@
                                 <div class="Reasons-box1-bg"></div>
                                 <div class="Reasons-box2">
                                         <div class="Reasons-box2-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu">
+                                                <img width="430px" height="430px" src="<?php echo get_theme_file_uri('img/img_reason-1.webp'); ?>" alt="Medical menu" loading=”lazy”>
                                         </div>
                                         <div class="Reasons-box2-2">
                                                 <p class="Reasons-box2-top">01</p>
@@ -391,7 +391,7 @@
                                 <div class="Reasons-box3-bg"></div>
                                 <div class="Reasons-box4">
                                         <div class="Reasons-box4-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-2.webp'); ?>" alt="Medical menu">
+                                                <img width="430px" height="430px" src="<?php echo get_theme_file_uri('img/img_reason-2.webp'); ?>" alt="Medical menu" loading=”lazy”>
                                         </div>
                                         <div class="Reasons-box4-2">
                                                 <p class="Reasons-box4-top">02</p>
@@ -404,7 +404,7 @@
                                 <div class="Reasons-box1-bg"></div>
                                 <div class="Reasons-box2">
                                         <div class="Reasons-box2-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-3.webp'); ?>" alt="Medical menu">
+                                                <img width="430px" height="430px" src="<?php echo get_theme_file_uri('img/img_reason-3.webp'); ?>" alt="Medical menu" loading=”lazy”>
                                         </div>
                                         <div class="Reasons-box2-2">
                                                 <p class="Reasons-box2-top">03</p>
@@ -417,7 +417,7 @@
                                 <div class="Reasons-box3-bg"></div>
                                 <div class="Reasons-box4">
                                         <div class="Reasons-box4-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-4.webp'); ?>" alt="Medical menu">
+                                                <img width="430px" height="430px" src="<?php echo get_theme_file_uri('img/img_reason-4.webp'); ?>" alt="Medical menu" loading=”lazy”>
                                         </div>
                                         <div class="Reasons-box4-2">
                                                 <p class="Reasons-box4-top">04</p>
@@ -430,7 +430,7 @@
                                 <div class="Reasons-box1-bg"></div>
                                 <div class="Reasons-box2">
                                         <div class="Reasons-box2-1">
-                                                <img src="<?php echo get_theme_file_uri('img/img_reason-5.webp'); ?>" alt="Medical menu">
+                                                <img width="430px" height="430px" src="<?php echo get_theme_file_uri('img/img_reason-5.webp'); ?>" alt="Medical menu" loading=”lazy”>
                                         </div>
                                         <div class="Reasons-box2-2">
                                                 <p class="Reasons-box2-top">05</p>
@@ -466,7 +466,7 @@
                 <div class="FAQ-list">
                         <div class="FAQ-item">
                                 <div class="FAQ-question">
-                                        <span><span class="qa-mark">Q</span>予約は必要ですか？</span>
+                                        <h3><span class="qa-mark">Q</span>予約は必要ですか？</h3>
                                         <span class="FAQ-icon">＋</span>
                                 </div>
                                 <div class="FAQ-answer">
@@ -475,7 +475,7 @@
                         </div>
                         <div class="FAQ-item">
                                 <div class="FAQ-question">
-                                        <span><span class="qa-mark">Q</span>朝は何時から受付していますか？</span>
+                                        <h3><span class="qa-mark">Q</span>朝は何時から受付していますか？</h3>
                                         <span class="FAQ-icon">＋</span>
                                 </div>
                                 <div class="FAQ-answer">
@@ -484,7 +484,7 @@
                         </div>
                         <div class="FAQ-item">
                                 <div class="FAQ-question">
-                                        <span><span class="qa-mark">Q</span>内視鏡検査の予約はどのようにすればよいですか？</span>
+                                        <h3><span class="qa-mark">Q</span>内視鏡検査の予約はどのようにすればよいですか？</h3>
                                         <span class="FAQ-icon">＋</span>
                                 </div>
                                 <div class="FAQ-answer">
@@ -493,7 +493,7 @@
                         </div>
                         <div class="FAQ-item">
                                 <div class="FAQ-question">
-                                        <span><span class="qa-mark">Q</span>形成外科の治療を予約したいのですが、どうすればよいですか？</span>
+                                        <h3><span class="qa-mark">Q</span>形成外科の治療を予約したいのですが、どうすればよいですか？</h3>
                                         <span class="FAQ-icon">＋</span>
                                 </div>
                                 <div class="FAQ-answer">
@@ -513,10 +513,10 @@
                         <a href="https://oujinkai.net/" target="_blank" rel="noopener noreferrer" class="Corporation-box0">
                                 <div class="Corporation-box1">
                                         <div class="Corporation-box-left">
-                                                <img src="<?php echo get_theme_file_uri('img/image1.webp'); ?>" alt="さくら内視鏡クリニック品川">
+                                                <img width="241px" height="33px" src="<?php echo get_theme_file_uri('img/image1.webp'); ?>" alt="さくら内視鏡クリニック品川" loading=”lazy”>
                                         </div>
                                         <div class="Corporation-box-right">
-                                                <img src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン">
+                                                <img width="26px" height="26px" src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン" loading=”lazy”>
                                         </div>
                                 </div>
                                 <div class="Corporation-box-bottom">
@@ -526,10 +526,10 @@
                         <a href="https://emmykids.com/" target="_blank" rel="noopener noreferrer" class="Corporation-box0">
                                 <div class="Corporation-box1">
                                         <div class="Corporation-box-left">
-                                                <img src="<?php echo get_theme_file_uri('img/image2.webp'); ?>" alt="エミーキッズクリニック">
+                                                <img width="225px" height="46px" src="<?php echo get_theme_file_uri('img/image2.webp'); ?>" alt="エミーキッズクリニック" loading=”lazy”>
                                         </div>
                                         <div class="Corporation-box-right">
-                                                <img src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン">
+                                                <img width="26px" height="26px" src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン" loading=”lazy”>
                                         </div>
                                 </div>
                                 <div class="Corporation-box-bottom">
@@ -539,10 +539,10 @@
                         <a href="https://igarashi-derma.com/" target="_blank" rel="noopener noreferrer" class="Corporation-box0">
                                 <div class="Corporation-box1">
                                         <div class="Corporation-box-left">
-                                                <img src="<?php echo get_theme_file_uri('img/image3.webp'); ?>" alt="いがらし皮膚科東五反田">
+                                                <img width="240px" height="35px" src="<?php echo get_theme_file_uri('img/image3.webp'); ?>" alt="いがらし皮膚科東五反田" loading=”lazy”>
                                         </div>
                                         <div class="Corporation-box-right">
-                                                <img src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン">
+                                                <img width="26px" height="26px" src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン" loading=”lazy”>
                                         </div>
                                 </div>
                                 <div class="Corporation-box-bottom">
@@ -552,10 +552,10 @@
                         <a href="https://chidori-res.com/" target="_blank" rel="noopener noreferrer" class="Corporation-box0">
                                 <div class="Corporation-box1">
                                         <div class="Corporation-box-left">
-                                                <img src="<?php echo get_theme_file_uri('img/image4.webp'); ?>" alt="ちどり内科呼吸器内科クリニック">
+                                                <img width="209px" height="49px" src="<?php echo get_theme_file_uri('img/image4.webp'); ?>" alt="ちどり内科呼吸器内科クリニック" loading=”lazy”>
                                         </div>
                                         <div class="Corporation-box-right">
-                                                <img src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン">
+                                                <img width="26px" height="26px" src="<?php echo get_theme_file_uri('img/Group1698.webp'); ?>" alt="外部リンクアイコン" loading=”lazy”>
                                         </div>
                                 </div>
                                 <div class="Corporation-box-bottom">

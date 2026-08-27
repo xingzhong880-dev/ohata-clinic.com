@@ -8,7 +8,7 @@
                     $img_url = wp_get_attachment_image_url($img_id, 'large');
                     if ($img_url) :
                 ?>
-                        <img class="supervisor-toggle-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('supervisor-toggle-name')); ?>">
+                        <img width="96px" height="96px" class="supervisor-toggle-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('supervisor-toggle-name')); ?>" loading=”lazy”>
                 <?php endif;
                 endif; ?>
             </div>

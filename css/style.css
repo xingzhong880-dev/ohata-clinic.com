@@ -291,6 +291,7 @@ header.is-scrolled .top-address {
 .header_logo img{
   transition: height 0.3s ease;
   height: 47px;
+  width: auto;
   margin: 0;
   display: block;
 }
@@ -2772,3 +2773,213 @@ last
   }
 }/*# sourceMappingURL=style.css.map */
 
+/* ----------------------------------------
+目次
+---------------------------------------- */
+.lwptoc {
+  border-radius: 8px;
+  border: 1px solid #DCEEFF;
+}
+.lwptoc_header {
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-align: left;
+    width: calc(100% + 36px);
+  margin: -14px -18px -18px -18px;
+  padding: calc(0.5rem + 14px) 2.5rem;
+  position: static;
+    font-weight: bold;
+    font-family: "Zen Maru Gothic", sans-serif;
+    background: #DCEEFF;
+    padding: 15px 40px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lwptoc_header:hover {
+    opacity: 0.6;
+}
+.lwptoc_items-visible>.lwptoc_itemWrap{
+    padding: 20px;
+}
+.lwptoc_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.lwptoc_toggle::before,
+.lwptoc_toggle::after{
+    display: none;
+}
+.lwptoc_toggle{
+    background-color: #007FFF;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+}
+.lwptoc_toggle_label {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 2px;
+}
+.lwptoc_itemWrap .lwptoc_item a{
+    border-bottom: 1px solid #DCEEFF;
+}
+.lwptoc_item {
+  line-height: 1.9;
+  margin: 2px 0;
+}
+.lwptoc_item a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 8px;
+}
+
+.lwptoc_item_number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 50%;
+  color: #007FFF;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.lwptoc_itemWrap .lwptoc_itemWrap .lwptoc_item_number {
+    font-size: 14px;
+    background-color: #DCEEFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    aspect-ratio: 1 / 1;
+  text-align: center;
+}
+.lwptoc_itemWrap .lwptoc_itemWrap .lwptoc_item_label {
+    color: #007FFF;
+}
+.lwptoc_itemWrap .lwptoc_itemWrap .lwptoc_item a{
+    border-bottom: none;
+}
+.lwptoc_itemWrap .lwptoc_itemWrap .lwptoc_item a:hover {
+  border-bottom: none;
+  animation: dashedLineFlash 0.4s ease-out forwards;
+}
+
+@keyframes dashedLineFlash {
+  0% {
+    border-bottom: 1.5px dashed rgba(0, 127, 255, 1);
+  }
+  100% {
+    border-bottom: 1.5px dashed rgba(0, 127, 255, 0);
+  }
+}
+.lwptoc_item_label {
+  font-weight: bold;
+  font-size: 18px;
+}
+.lwptoc_item a:hover .lwptoc_item_label {
+  opacity: 0.6;
+}
+
+.lwptoc_itemWrap .lwptoc_itemWrap {
+  padding-left: 20px;
+}
+
+/* ----------------------------------------
+目次：閉じたときにヘッダーだけ表示させる
+---------------------------------------- */
+.lwptoc,
+.lwptoc_i {
+  overflow: hidden !important;
+  border-radius: 8px !important;
+}
+.lwptoc {
+  padding: 0 !important;
+}
+
+.lwptoc_header {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.lwptoc_i:not(:has(.lwptoc_items-visible)) {
+  padding: 0 !important;
+  border: none !important;
+}
+.lwptoc_i:not(:has(.lwptoc_items-visible)) .lwptoc_header {
+  border-radius: 8px !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.lwptoc_items:not(.lwptoc_items-visible) {
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: none !important;
+}
+.lwptoc_i:not(:has(.lwptoc_items-visible)) .lwptoc_itemWrap {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#breadcrumbs {
+  padding: 12px 24px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#breadcrumbs a[href$="clinic2.local/"] {
+  font-size: 0;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+font-weight: bold;
+}
+#breadcrumbs a[href$="clinic2.local/"]::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/Vector2.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 3px;
+}
+
+#breadcrumbs a {
+  color: #007FFF;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.breadcrumb-sep {
+  display: inline-block;
+  position: relative;
+  top: -7px;
+  font-size: 0;
+  width: 7px;
+  height: 7px;
+  margin: 0 6px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(45deg);
+}
+
+#breadcrumbs .breadcrumb_last {
+  font-weight: bold;
+}

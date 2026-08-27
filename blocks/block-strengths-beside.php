@@ -14,7 +14,7 @@ $tag = esc_attr( $tag );
                 $img_url = wp_get_attachment_image_url($img_id, 'large');
                 if ($img_url) :
             ?>
-                    <img class="strengths-box-img-beside" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('strengths-title-beside')); ?>">
+                    <img width="280px" height="179px" class="strengths-box-img-beside" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('strengths-title-beside')); ?>" loading=”lazy”>
             <?php endif;
             endif; ?>
         </div>

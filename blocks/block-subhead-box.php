@@ -5,7 +5,7 @@ if ( ! $tag ) {
 }
 $tag = esc_attr( $tag );
 ?>
-<div class="wp-block-paragraph">
+<div class="subhead-box-box">
     <div class="subhead-box-top">
         <<?php echo $tag; ?> class="subhead-box-top-title">
             <?php echo esc_html( block_value( 'subhead-box-title' ) ); ?>

@@ -23,7 +23,7 @@ $has_next = block_value('flow-step') === 'yes';
                     $img_url = wp_get_attachment_image_url($img_id, 'large');
                     if ($img_url) :
                 ?>
-                        <img class="flow-box-img1" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('flow-title')); ?>">
+                        <img width="270px" height="170px" class="flow-box-img1" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('flow-title')); ?>" loading=”lazy”>
                 <?php endif;
                 endif; ?>
             </div>

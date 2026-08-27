@@ -8,7 +8,7 @@
                     $img_url = wp_get_attachment_image_url($img_id, 'large');
                     if ($img_url) :
                 ?>
-                        <img class="connection-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('connection-title')); ?>">
+                        <img width="160px" height="120px" class="connection-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('connection-title')); ?>" loading=”lazy”>
                 <?php endif;
                 endif; ?>
             </div>

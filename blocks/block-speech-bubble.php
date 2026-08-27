@@ -11,7 +11,7 @@ $switch = ( $switch === 'right' ) ? 'right' : 'left';
                 $img_url = wp_get_attachment_image_url($img_id, 'large');
                 if ($img_url) :
             ?>
-                    <img class="speech-bubble-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('speech-bubble-name')); ?>">
+                    <img width="124px" height="124px" class="speech-bubble-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('speech-bubble-name')); ?>" loading=”lazy”>
             <?php endif;
             endif; ?>
         </div>
