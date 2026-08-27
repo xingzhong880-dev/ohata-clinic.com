@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大圃クリニック</title>
+    <title>茨城県筑西市の内科なら大圃クリニック | 下館駅徒歩4分の総合診療 | 内科学会認定医在籍 | 土曜日も診療</title>
+    <meta name="description" content="地域に寄り添い開院79年。下館駅北口から徒歩4分の総合診療クリニック。駐車場15台完備。土曜日診療可能。内科認定医・内視鏡専門医在籍。昇降機完備のバリアフリー。内視鏡検査・睡眠時無呼吸症候群・内科・胃腸科・外科・形成外科・皮膚科など幅広い診療に対応。">
     <!-- favicon OGP-->
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +44,7 @@
             </div>
             <div class="header__inner2">
                 <div class="header_logo">
-                    <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-1.webp" alt="大圃クリニック"></a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>"><img width="297" height="47" src="<?php echo get_template_directory_uri(); ?>/img/logo-1.webp" alt="大圃クリニック"></a>
                 </div>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
@@ -52,55 +53,55 @@
                         <li class="header__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">医師紹介</a></li>
                         <li class="header__nav-item header__nav-item--dropdown">
                             <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle-checkbox">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="dropdown-link-pc">診療内容一覧 <span class="dropdown-arrow">∨</span></a>
+                            <a href="<?php echo esc_url(home_url('/departments/')); ?>" class="dropdown-link-pc">診療内容一覧 <span class="dropdown-arrow">∨</span></a>
                             <label for="dropdown-toggle" class="dropdown-link-sp">診療内容一覧 <span class="dropdown-arrow">∨</span></label>
                             <ul class="header-dropdown">
                                 <li class="header-dropdown-item">
-                                    <a href="<?php echo esc_url(home_url('/internal-medicine')); ?>">
+                                    <a href="<?php echo esc_url(home_url('/departments/internal-medicine/')); ?>">
                                         <div class="Medical-menu-circle-top">
-                                            <img src="<?php echo get_theme_file_uri('img/Rectangle1.webp'); ?>" alt="内科">
+                                            <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle1.webp'); ?>" alt="内科">
                                         </div>
-                                        <h3 class="Medical-menu-text-title">内科</h3>
+                                        <p class="Medical-menu-text-title">内科</p>
                                     </a>
                                 </li>
                                 <li class="header-dropdown-item">
                                     <a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle-top">
-                                            <img src="<?php echo get_theme_file_uri('img/Rectangle2.webp'); ?>" alt="睡眠時無呼吸症候群">
+                                            <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle2.webp'); ?>" alt="睡眠時無呼吸症候群">
                                         </div>
-                                        <h3 class="Medical-menu-text-title">睡眠時無呼吸症候群</h3>
+                                        <p class="Medical-menu-text-title">睡眠時無呼吸症候群</p>
                                     </a>
                                 </li>
                                 <li class="header-dropdown-item">
                                     <a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle-top">
-                                            <img src="<?php echo get_theme_file_uri('img/Rectangle3.webp'); ?>" alt="CPAP治療">
+                                            <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle3.webp'); ?>" alt="CPAP治療">
                                         </div>
-                                        <h3 class="Medical-menu-text-title">CPAP治療</h3>
+                                        <p class="Medical-menu-text-title">CPAP治療</p>
                                     </a>
                                 </li>
                                 <li class="header-dropdown-item">
                                     <a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle-top">
-                                            <img src="<?php echo get_theme_file_uri('img/Rectangle4.webp'); ?>" alt="呼吸器内科">
+                                            <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle4.webp'); ?>" alt="呼吸器内科">
                                         </div>
-                                        <h3 class="Medical-menu-text-title">呼吸器内科</h3>
+                                        <p class="Medical-menu-text-title">呼吸器内科</p>
                                     </a>
                                 </li>
                                 <li class="header-dropdown-item">
                                     <a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle-top">
-                                            <img src="<?php echo get_theme_file_uri('img/Rectangle5.webp'); ?>" alt="生活習慣病">
+                                            <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle5.webp'); ?>" alt="生活習慣病">
                                         </div>
-                                        <h3 class="Medical-menu-text-title">生活習慣病</h3>
+                                        <p class="Medical-menu-text-title">生活習慣病</p>
                                     </a>
                                 </li>
                                 <li class="header-dropdown-item">
                                     <a href="<?php echo esc_url(home_url('/')); ?>">
                                         <div class="Medical-menu-circle-top">
-                                            <img src="<?php echo get_theme_file_uri('img/Rectangle6.webp'); ?>" alt="形成外科">
+                                            <img width="88px" height="88px" src="<?php echo get_theme_file_uri('img/Rectangle6.webp'); ?>" alt="形成外科">
                                         </div>
-                                        <h3 class="Medical-menu-text-title">形成外科</h3>
+                                        <p class="Medical-menu-text-title">形成外科</p>
                                     </a>
                                 </li>
                             </ul>

@@ -3,7 +3,7 @@
     <footer>
         <div class="footer__inner">
             <div class="footer_logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-1.webp" alt="大圃クリニック"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>"><img width="255px" height="40px" src="<?php echo get_template_directory_uri(); ?>/img/logo-1.webp" alt="大圃クリニック"></a>
             </div>
             <div class="footer-container">
                 <div class="footer-address">
@@ -59,7 +59,7 @@
                             </a></li>
                         </ul>
                         <ul class="footer__nav-list-2">
-                            <li class="footer__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>">診療内容一覧
+                            <li class="footer__nav-item"><a href="<?php echo esc_url(home_url('/departments/')); ?>">診療内容一覧
                                 <svg width="26" height="26" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="50" cy="50" r="48" fill="white" stroke="#ffffff" stroke-width="1"/>
                                     <path d="M40 35 L60 50 L40 65" stroke="#007FFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
@@ -68,7 +68,7 @@
                             <div class="footer__nav-item-dropdown">
                                 <ul class="footer-dropdown-left">
                                     <li class="footer-dropdown-item">
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">
+                                        <a href="<?php echo esc_url(home_url('/departments/internal-medicine/')); ?>">
                                             <svg width="20" height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M40 35 L60 50 L40 65" stroke="#86898B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                             </svg>
@@ -146,7 +146,7 @@
                             <div class="footer__nav-item-dropdown">
                                 <ul class="footer-dropdown-left">
                                     <li class="footer-dropdown-item">
-                                        <a href="<?php echo esc_url(home_url('/')); ?>">
+                                        <a href="<?php echo esc_url(home_url('/medical/internal-medicine')); ?>">
                                             <svg width="20" height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M40 35 L60 50 L40 65" stroke="#86898B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                             </svg>

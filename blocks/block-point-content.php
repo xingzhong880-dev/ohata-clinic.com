@@ -17,7 +17,7 @@ $switch = ( $switch === 'right' ) ? 'right' : 'left';
                 $img_url = wp_get_attachment_image_url($img_id, 'large');
                 if ($img_url) :
             ?>
-                    <img class="point-content-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('point-content-title')); ?>" loading="lazy">
+                    <img width="420px" height="420px" class="point-content-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('point-content-title')); ?>" loading="lazy">
             <?php endif;
             endif; ?>
         </div>

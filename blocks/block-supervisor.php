@@ -9,7 +9,7 @@
                     $img_url = wp_get_attachment_image_url($img_id, 'large');
                     if ($img_url) :
                 ?>
-                        <img class="supervisor-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('supervisor-title')); ?>">
+                        <img width="229px" height="268px" class="supervisor-box-img" src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr(block_value('supervisor-title')); ?>" loading=”lazy”>
                 <?php endif;
                 endif; ?>
 
