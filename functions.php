@@ -128,6 +128,31 @@ function my_static_breadcrumb_adder( $breadcrumb_trail ) {
 add_action('bcn_after_fill', 'my_static_breadcrumb_adder');
 
 //----------------------------------------------------
+// 診療内容ページのパンくず
+//----------------------------------------------------
+function my_departments_breadcrumb_links( $links ) {
+  if ( ! is_page('internal-medicine') ) {
+    return $links;
+  }
+
+  foreach ( $links as $link ) {
+    if ( isset( $link['text'] ) && $link['text'] === '診療内容一覧' ) {
+      return $links;
+    }
+  }
+
+  $current_page = array_pop( $links );
+  $links[] = array(
+    'url'  => home_url('/departments/'),
+    'text' => '診療内容一覧',
+  );
+  $links[] = $current_page;
+
+  return $links;
+}
+add_filter('wpseo_breadcrumb_links', 'my_departments_breadcrumb_links');
+
+//----------------------------------------------------
 // エディター
 //----------------------------------------------------
 add_action('after_setup_theme', 'block_editor_css');
